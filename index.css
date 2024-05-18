@@ -57,6 +57,7 @@ li select {
     outline: none;
     color: darkblue;
     font-size: 1vw;
+    padding: 3px;
     font-family: Gropled;
     cursor: pointer;
 }
@@ -679,7 +680,7 @@ footer img:hover {
 
     .worker {
         width: 90%;
-        height: 27.5vh;
+        height: 55vw;
         border: 3px solid darkgrey;
     }
 
