@@ -679,7 +679,7 @@ footer img:hover {
 
     .worker {
         width: 90%;
-        height: 29vh;
+        height: 27.5vh;
         border: 3px solid darkgrey;
     }
 
@@ -761,6 +761,7 @@ footer img:hover {
 
     .stages {
         width: 90%;
+        margin-top: 30px;
         margin: 5%;
     }
 
@@ -770,7 +771,7 @@ footer img:hover {
 
     .feedback_text {
         margin-top: 30px;
-        font-size: 7vw;
+        font-size: 8vw;
     }
 
     .feedback {
@@ -786,28 +787,27 @@ footer img:hover {
     .feedback input,
     .feedback textarea,
     .feedback label {
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .feedback .millions {
-
-        margin-left: 10vw;
+        margin-left: 2vw;
         gap: 10px;
         width: 100%;
     }
 
     .feedback .millions button,
     .send {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
     .feedback .send {
-        margin: 20px 40%;
-        font-size: 6vw;
+        margin: 20px 33%;
+        font-size: 8vw;
     }
 
     footer {
-        padding: 20px 0 40px 0;
+        padding: 30px 0;
         width: 100%;
     }
 
@@ -870,7 +870,7 @@ footer img:hover {
     }
 
     footer .contact {
-        margin: 8% 0;
+        margin: 4% 0;
     }
 
     footer img {
