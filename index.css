@@ -29,6 +29,11 @@ header {
     font-family: Gropled;
 }
 
+header div {
+    display: flex;
+    gap: 10vw;
+}
+
 header ul {
     display: flex;
 }
@@ -44,7 +49,7 @@ header li a {
 header li a:hover {
     text-transform: uppercase;
     text-decoration: underline;
-    font-size: calc(1vw*1.2);
+    font-size: 1.2vw;
     transition: all .6s;
 }
 
@@ -76,7 +81,7 @@ li select {
 
 .search {
     font-size: 1.1vw;
-    padding: 5px;
+    padding: 3px;
     font-family: Klukva;
 }
 
@@ -589,6 +594,39 @@ footer img:hover {
 }
 
 @media (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    header ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20vw;
+    }
+
+    header ul li,
+    header li a {
+        font-size: 4vw;
+        transition: all .6s;
+    }
+
+    header li a:hover {
+        font-size: 4.2vw;
+        transition: all .6s;
+    }
+
+    li select {
+        font-size: 4vw;
+    }
+
+    .search {
+        font-size: 5vw;
+        padding: 1px;
+        outline: none;
+    }
+
     .coming {
         margin: 20px 0;
         font-size: 5vw;
