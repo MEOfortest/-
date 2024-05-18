@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Gropled;
+    src: url('fonts/Gropled-Bold.otf');
+}
+
+@font-face {
+    font-family: Klukva;
+    src: url('fonts/Klukva_version_01.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/reviews_back.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.home {
+    left: 15px;
+    top: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.home:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 20px 8px orange;
+    transition: .5s;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+select, textarea, button {
+    font-size: 25px;
+    resize: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: Gropled;
+}
+
+select {
+    text-align: center;
+    font-size: 30px;
+}
+
+textarea {
+    font-family: Klukva;
+    padding: 5px;
+    margin: 30% 0 20% 0;
+}
+
+button {
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:active {
+    scale: .9;
+    transition: .2s;
+}

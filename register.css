@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Gropled;
+    src: url('fonts/Gropled-Bold.otf');
+}
+
+@font-face {
+    font-family: Klukva;
+    src: url('fonts/Klukva_version_01.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/register_back.png');
+    background-size: cover;
+}
+
+.home {
+    left: 15px;
+    top: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.home:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 20px 8px orange;
+    transition: .5s;
+}
+
+h1 {
+    text-align: center;
+    font-family: Gropled;
+    margin-bottom: 10px;
+}
+
+form {
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 20px 40px 30px 40px;
+    font-family: Klukva;
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    color: darkblue;
+}
+
+input {
+    font-size: 15px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 3px;
+    background: transparent;
+    font-weight: bold;
+}
+
+label {
+    transform: translateY(-25px);
+    pointer-events: none;
+    transition: .4s;
+}
+
+input:is(:focus, :valid) ~ label {
+    transition: .4s;
+}
+
+input#t1:is(:focus, :valid) ~ label.name1 {
+    transform: translateY(-42px);
+}
+
+input#t2:is(:focus, :valid) ~ label.name2 {
+    transform: translateY(-43px);
+}
+
+input#t3:is(:focus, :valid) ~ label.name3 {
+    transform: translateY(-43px);
+}
+
+input#t4:is(:focus, :valid) ~ label.name4 {
+    transform: translateY(-45px);
+}
+
+input#t5:is(:focus, :valid) ~ label.name5 {
+    transform: translateY(-41px);
+}
+
+label.name6 {
+    transform: translateY(-45px);
+}
+
+input#t6 {
+    cursor: pointer;
+}
+
+input#t7:is(:focus, :valid) ~ label.name7 {
+    transform: translateY(-43px);
+}
+
+input#t8:is(:focus, :valid) ~ label.name8 {
+    transform: translateY(-43px);
+}
+
+input#t9:is(:focus, :valid) ~ label.name9 {
+    transform: translateY(-45px);
+}
+
+button {
+    width: 70%;
+    margin-left: 15%;
+    background: green;
+    font-size: 25px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    border:  1px solid black;
+    font-family: Klukva;
+    font-weight: larger;
+    color: yellow;    
+    box-shadow: inset 10px 10px 20px rgb(1, 43, 1);
+}
+
+button:active {
+    scale: .9;
+}

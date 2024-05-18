@@ -1,0 +1,150 @@
+@font-face {
+    font-family: Gropled;
+    src: url('fonts/Gropled-Bold.otf');
+}
+
+@font-face {
+    font-family: Klukva;
+    src: url('fonts/Klukva_version_01.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home {
+    left: 15px;
+    top: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.home:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 20px 8px orange;
+    transition: .5s;
+}
+
+.line {
+    width: 98%;
+}
+
+.subline {
+    width: 100%;
+    height: 10px;
+    border-radius: 30%;
+    background: brown;
+}
+
+.name {
+    font-family: Gropled;
+    font-size: 23px;
+    margin-left: 41%;
+    transform: translateY(17px);
+    background: white;
+    width: 260px;
+    text-align: center;
+    color: brown;
+}
+
+.name.n2 {
+    width: 120px;
+    margin-left: 46%;
+}
+
+.line.m1 {
+    width: 60%;
+}
+
+.name.n11 {
+    width: 190px;
+    margin-left: 40%;
+} 
+
+.name.n12 {
+    width: 250px;
+    margin-left: 38%;
+} 
+
+.name.n13 {
+    width: 290px;
+    margin-left: 33%;
+}
+
+.name.n14 {
+    width: 240px;
+    margin-left: 37%;
+}
+
+.name.n15 {
+    width: 330px;
+    margin-left: 33%;
+}
+
+.name.n16 {
+    width: 330px;
+    margin-left: 33%;
+}
+
+.name.n17 {
+    width: 250px;
+    margin-left: 37%;
+}
+
+.name.n18 {
+    width: 330px;
+    margin-left: 34%;
+}
+
+.map {
+    margin: 20px 0;
+    width: 96%;
+    border: 2px solid black;
+}
+
+.map img {
+    width: 100%;
+}
+
+.desc {
+    width: 90%;
+    margin: 20px 0;
+}
+
+.galleries {
+    width: 80%;
+    margin: 2.5% 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.galleries div {
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+.gallery img:hover {
+    scale: 1.2;
+    transition: .5s;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}

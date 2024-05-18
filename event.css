@@ -1,0 +1,359 @@
+@font-face {
+    font-family: Gropled;
+    src: url('fonts/Gropled-Bold.otf');
+}
+
+@font-face {
+    font-family: Klukva;
+    src: url('fonts/Klukva_version_01.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(222, 217, 217);
+    overflow-y: hidden;
+}
+
+.home {
+    left: 15px;
+    top: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.home:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 20px 8px orange;
+    transition: .5s;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 90%;
+    padding: 30px;
+}
+
+form button {
+    font-family: Gropled;
+    font-size: 25px;
+    padding: 8px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: darkgrey;
+    transition: .3s;
+}
+
+form button:hover {
+    background: linear-gradient(270deg, rgb(77, 75, 75), darkgrey);
+    transition: .3s;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.select h2 {
+    font-family: Gropled;
+    margin-bottom: 10px;
+}
+
+.info {
+    margin: 30px 0;
+    display: flex;
+    padding: 15px 10px;
+}
+
+.info p, .info input, select {
+    font-size: 23px;
+    margin: 0 20px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-family: Klukva;;
+}
+
+.info input[type="number"] {
+    text-align: center;
+}
+
+.info label {
+    position: absolute;
+    transform: translate(30px, -20px);
+    font-size: 18px;
+    font-style: italic;
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+}
+
+.bar1, .bar2, .bar3, .bar4, .bar5, .bar6 {
+    height: 35px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background: rgb(9, 159, 167);
+    border-radius: 2px;
+    font-size: 30px;
+    transition: all .4s ease;
+    text-align: center;
+    font-family: Gropled;
+}
+
+.navigation label:hover {
+    scale: 1.2;
+    background: rgb(194, 35, 62);
+}
+
+input[name="b"], input[name="x"], input[name="z"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.worker {
+    width: 86%;
+    height: 33.5vh;
+    overflow: hidden;
+    border: 5px solid rgb(114, 69, 69);
+}
+
+.workers {
+    width: 100%;
+    display: flex;
+    background: lightgreen;
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    transition: all .8s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    width: 50%;
+}
+
+.card div {
+    width: 49%;
+    padding: 0 15px;
+    font-family: Klukva;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card div h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#b1:checked ~ .c1 {
+    margin-top: 0;
+}
+
+#b2:checked ~ .c1 {
+    margin-top: -70%;
+}
+
+#b3:checked ~ .c1 {
+    margin-top: -140.4%;
+}
+
+#b4:checked ~ .c1 {
+    margin-top: -211%;
+}
+
+#b5:checked ~ .c1 {
+    margin-top: -283%;
+}
+
+#choose1:checked ~ .choice,
+#choose2:checked ~ .choice,
+#choose3:checked ~ .choice,
+#choose4:checked ~ .choice,
+#choose5:checked ~ .choice {
+    font-size: 0.1px;
+}
+
+#choose1:checked ~ .choice::before,
+#choose2:checked ~ .choice::before,
+#choose3:checked ~ .choice::before,
+#choose4:checked ~ .choice::before,
+#choose5:checked ~ .choice::before {
+    content: 'ВЫБРАНО';
+    position: relative;
+    font-size: 18px;
+    color: yellow;
+}
+
+.choice {
+    cursor: pointer;
+    background: green;
+    padding: 8px;
+    color: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.choice:hover {
+    scale: 1.1;
+}
+
+.event {
+    width: 100%;
+    transition: all .8s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event img {
+    width: 100%;
+}
+
+.event div {
+    font-family: Klukva;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.event div h3 {
+    padding: 8px;
+}
+
+#v1:checked ~ .s1 {
+    margin-top: 0;
+}
+
+#v2:checked ~ .s1 {
+    margin-top: -77%;
+}
+
+#v3:checked ~ .s1 {
+    margin-top: -154%;
+}
+
+#v4:checked ~ .s1 {
+    margin-top: -231%;
+}
+
+#v5:checked ~ .s1 {
+    margin-top: -307%;
+}
+
+#v6:checked ~ .s1 {
+    margin-top: -384%;
+}
+
+#choose11:checked ~ .choice1,
+#choose21:checked ~ .choice1,
+#choose31:checked ~ .choice1,
+#choose41:checked ~ .choice1,
+#choose51:checked ~ .choice1,
+#choose61:checked ~ .choice1 {
+    font-size: 0.1px;
+}
+
+#choose11:checked ~ .choice1::before,
+#choose21:checked ~ .choice1::before,
+#choose31:checked ~ .choice1::before,
+#choose41:checked ~ .choice1::before,
+#choose51:checked ~ .choice1::before,
+#choose61:checked ~ .choice1::before {
+    content: '(ВЫБРАНО)';
+    font-size: 20px;
+    position: relative;
+    color: red;
+}
+
+.choice1 {
+    cursor: pointer;
+    padding: 8px;
+    color: red;
+    font-weight: 800;
+}
+
+#z1:checked ~ .q1 {
+    margin-top: 0;
+}
+
+#z2:checked ~ .q1 {
+    margin-top: -77%;
+}
+
+#z3:checked ~ .q1 {
+    margin-top: -154%;
+}
+
+#z4:checked ~ .q1 {
+    margin-top: -230%;
+}
+
+#z5:checked ~ .q1 {
+    margin-top: -307%;
+}
+
+#z6:checked ~ .q1 {
+    margin-top: -384%;
+}
+
+#choose111:checked ~ .choice2,
+#choose211:checked ~ .choice2,
+#choose311:checked ~ .choice2,
+#choose411:checked ~ .choice2,
+#choose511:checked ~ .choice2,
+#choose611:checked ~ .choice2 {
+    font-size: 0.1px;
+}
+
+#choose111:checked ~ .choice2::before,
+#choose211:checked ~ .choice2::before,
+#choose311:checked ~ .choice2::before,
+#choose411:checked ~ .choice2::before,
+#choose511:checked ~ .choice2::before,
+#choose611:checked ~ .choice2::before {
+    content: '(ВЫБРАНО)';
+    font-size: 20px;
+    position: relative;
+    color: red;
+}
+
+.choice2 {
+    cursor: pointer;
+    padding: 8px;
+    color: red;
+    font-weight: 800;
+}

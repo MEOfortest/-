@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Gropled;
+    src: url('fonts/Gropled-Bold.otf');
+}
+
+@font-face {
+    font-family: Klukva;
+    src: url('fonts/Klukva_version_01.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.home {
+    margin: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.home:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 20px 8px orange;
+    transition: .5s;
+}
+
+img {
+    width: 45%;
+    margin: 10px 0;
+}
+
+.image {
+    text-align: center;
+}
+
+p:not(.image) {
+    font-family: Klukva;
+    font-size: 30px;
+    margin: 0 20%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Gropled;
+}
+
+div {
+    margin-bottom: 100px;
+}

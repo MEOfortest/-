@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="event.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon.ico">
+    <title>Заявки на мероприятия</title>
+</head>
+
+<body>
+
+    <div>
+        <a href="index.html" class="home">НА ГЛАВНУЮ</a>
+    </div>
+
+    <form>
+        <br>
+        <h1 style="font-family: Gropled;">ЗАПИСЬ НА МЕРОПРИЯТИЕ</h1>
+        <div class="info">
+            <div>
+                <label for="city">Город</label>
+                <select>
+                    <option>Выберите город:</option>
+                    <option>Анадырь</option>
+                    <option>Ардон</option>
+                    <option>Анива</option>
+                    <option>Амурск</option>
+                    <option>Азов</option>
+                    <option>Арсеньев</option>
+                    <option>Волгоград</option>
+                    <option>Вольск</option>
+                    <option>Волжский</option>
+                    <option>Высоцк</option>
+                    <option>Видное</option>
+                    <option>Добрянка</option>
+                    <option>Долинск</option>
+                    <option>Дно</option>
+                    <option>Дальнегорск</option>
+                    <option>Данилов</option>
+                    <option>Елабуга</option>
+                    <option>Екатеринбург</option>
+                    <option>Ейск</option>
+                    <option>Елец</option>
+                    <option>Задонск</option>
+                    <option>Звенигород</option>
+                    <option>Злынка</option>
+                    <option>Зея</option>
+                    <option>Заполярный</option>
+                    <option>Заинск</option>
+                    <option>Ивангород</option>
+                    <option>Ижевск</option>
+                    <option>Игарка</option>
+                    <option>Инта</option>
+                    <option>Истра</option>
+                    <option>Магадан</option>
+                    <option>Мглин</option>
+                    <option>Москва</option>
+                    <option>Мирный</option>
+                    <option>Новосибирск</option>
+                    <option>Можайск</option>
+                    <option>Сергиев Посад</option>
+                    <option>Можга</option>
+                    <option>Нижний Новгород</option>
+                    <option>Великий Новгород</option>
+                    <option>Миньяр</option>
+                    <option>Тольятти</option>
+                    <option>Якутск</option>
+                    <option>Санкт-Петебург</option>
+                    <option>Краснодар</option>
+                    <option>Мурманск</option>
+                    <option>Архангельск</option>
+                </select>
+            </div>
+            <div>
+                <label for="kind">Категория</label>
+                <select>
+                    <option>Выберите категорию:</option>
+                    <option>Для детей</option>
+                    <option>Развлекательное, Для детей</option>
+                    <option>Спортивное, Для взрослых</option>
+                    <option>Для взрослых</option>
+                    <option>Развлекательное, Для взрослых</option>
+                    <option>Спортивное, Для взрослых</option>
+                </select>
+            </div>
+            <div>
+                <label for="amount">Количество человек</label>
+                <input type="number" id="amount" min="1">
+            </div>
+            <div>
+                <label for="shedule">Расписание</label>
+                <input type="datetime-local" id="shedule">
+            </div>
+        </div>
+
+        <main>
+            <div class="select">
+                <h2>ВЫБЕРИТЕ СОТРУДНИКА:</h2>
+                <div class="worker">
+                    <div class="workers">
+                        <input type="radio" name="b" id="b1" checked>
+                        <input type="radio" name="b" id="b2">
+                        <input type="radio" name="b" id="b3">
+                        <input type="radio" name="b" id="b4">
+                        <input type="radio" name="b" id="b5">
+
+                        <div class="card c1">
+                            <div>
+                                <h3>Красильникова Анастасия Павловна</h3>
+                                <p>Эл. почта: krasil@yandex.ru</p>
+                                <p>Должность: Бухгалтер</p>
+                                <input type="checkbox" id="choose1" name="b">
+                                <label for="choose1" class="choice">ВЫБРАТЬ</label>
+                            </div>
+                            <img src="img/worker1.jpeg" alt="Сотрудник 1">
+                        </div>
+                        <div class="card">
+                            <div>
+                                <h3>Пауков Владимир Александрович</h3>
+                                <p>Эл. почта: spider@gmail.ru</p>
+                                <p>Должность: Администратор</p>
+                                <input type="checkbox" id="choose2" name="b">
+                                <label for="choose2" class="choice">ВЫБРАТЬ</label>
+                            </div>
+                            <img src="img/worker2.jpg" alt="Сотрудник 2">
+                        </div>
+                        <div class="card">
+                            <div>
+                                <h3>Алексеев Алексей Алексеевич</h3>
+                                <p>Эл. почта: Alex@gamil.com</p>
+                                <p>Должность: Арт-дизайнер</p>
+                                <input type="checkbox" id="choose3" name="b">
+                                <label for="choose3" class="choice">ВЫБРАТЬ</label>
+                            </div>
+                            <img src="img/worker3.jpg" alt="Сотрудник 3">
+                        </div>
+                        <div class="card">
+                            <div>
+                                <h3>Пауков Владимир Александрович</h3>
+                                <p>Эл. почта: spider@gmail.ru</p>
+                                <p>Должность: Администратор</p>
+                                <input type="checkbox" id="choose4" name="b">
+                                <label for="choose4" class="choice">ВЫБРАТЬ</label>
+                            </div>
+                            <img src="workers/worker2.webp" alt="Сотрудник 4">
+                        </div>
+                        <div class="card">
+                            <div>
+                                <h3>Алексеев Алексей Алексеевич</h3>
+                                <p>Эл. почта: Alex@gamil.com</p>
+                                <p>Должность: Арт-дизайнер</p>
+                                <input type="checkbox" id="choose5" name="b">
+                                <label for="choose5" class="choice">ВЫБРАТЬ</label>
+                            </div>
+                            <img src="workers/worker5.jpg" alt="Сотрудник 5">
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label for="b1" class="bar1">1</label>
+                    <label for="b2" class="bar2">2</label>
+                    <label for="b3" class="bar3">3</label>
+                    <label for="b4" class="bar4">4</label>
+                    <label for="b5" class="bar5">5</label>
+                </div>
+            </div>
+
+            <div class="select">
+                <h2>ВЫБЕРИТЕ ПРОГРАММУ:</h2>
+                <div class="worker">
+                    <div class="workers">
+                        <input type="radio" name="x" id="v1" checked>
+                        <input type="radio" name="x" id="v2">
+                        <input type="radio" name="x" id="v3">
+                        <input type="radio" name="x" id="v4">
+                        <input type="radio" name="x" id="v5">
+                        <input type="radio" name="x" id="v6">
+
+                        <div class="event s1">
+                            <div>
+                                <h3>ФЕСТИВАЛЬ ФОНАРЕЙ</h3>
+                                <input type="checkbox" id="choose11" name="b">
+                                <label for="choose11" class="choice1">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="img/activity3.jpg" alt="Сотрудник 1">
+                        </div>
+                        <div class="event">
+                            <div>
+                                <h3>ФЕСТИВАЛЬ ЕДЫ</h3>
+                                <input type="checkbox" id="choose21" name="b">
+                                <label for="choose21" class="choice1">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="img/activity1.jpg" alt="Сотрудник 1">
+                        </div>
+                        <div class="event">
+                            <div>
+                                <h3>ИГРА НА БАРАБАНАХ</h3>
+                                <input type="checkbox" id="choose31" name="b">
+                                <label for="choose31" class="choice1">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="img/activity2.jpg" alt="Сотрудник 1">
+                        </div>
+                        <div class="event">
+                            <div>
+                                <h3>КОМАНДНАЯ МОЗАИКА</h3>
+                                <input type="checkbox" id="choose41" name="b">
+                                <label for="choose41" class="choice1">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="programs_img/event5.jpeg" alt="Сотрудник 1">
+                        </div>
+                        <div class="event">
+                            <div>
+                                <h3>ЧЕЛОВЕК-ОРКЕСТР</h3>
+                                <input type="checkbox" id="choose51" name="b">
+                                <label for="choose51" class="choice1">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="programs_img/event2.jpg" alt="Сотрудник 1">
+                        </div>
+                        <div class="event">
+                            <div>
+                                <h3>ПЕРУДО</h3>
+                                <input type="checkbox" id="choose61" name="b">
+                                <label for="choose61" class="choice1">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="programs_img/event6.jpg" alt="Сотрудник 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label for="v1" class="bar1">1</label>
+                    <label for="v2" class="bar2">2</label>
+                    <label for="v3" class="bar3">3</label>
+                    <label for="v4" class="bar4">4</label>
+                    <label for="v5" class="bar5">5</label>
+                    <label for="v6" class="bar6">6</label>
+                </div>
+            </div>
+
+            <div class="select">
+                <h2>ВЫБЕРИТЕ ЛОКАЦИЮ:</h2>
+                <div class="worker">
+                    <div class="workers">
+                        <input type="radio" name="z" id="z1" checked>
+                        <input type="radio" name="z" id="z2">
+                        <input type="radio" name="z" id="z3">
+                        <input type="radio" name="z" id="z4">
+                        <input type="radio" name="z" id="z5">
+                        <input type="radio" name="z" id="z6">
+
+                        <div class="event q1">
+                            <div>
+                                <h3>СОРМОВСКИЙ ПАРК</h3>
+                                <input type="checkbox" id="choose111" name="b">
+                                <label for="choose111" class="choice2">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="img/location2.jpg" alt="Сотрудник 1">
+                        </div>
+                        <div class="event">
+                            <div>
+                                <h3>ПАРК "ДУБКИ"</h3>
+                                <input type="checkbox" id="choose211" name="b">
+                                <label for="choose211" class="choice2">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="img/location1.jpg" alt="Сотрудник 1">
+                        </div>
+                        <div class="event">
+                            <div>
+                                <h3>КРАСНАЯ ПЛОЩАДЬ</h3>
+                                <input type="checkbox" id="choose311" name="b">
+                                <label for="choose311" class="choice2">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="img/location3.jpg" alt="Сотрудник 1">
+                        </div>
+                        <div class="event">
+                            <div>
+                                <h3>ПЛОЩАДЬ ЛЕНИНА</h3>
+                                <input type="checkbox" id="choose411" name="b">
+                                <label for="choose411" class="choice2">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="img/location5.jpg" alt="Сотрудник 1">
+                        </div>
+                        <div class="event">
+                            <div>
+                                <h3>БОЛЬШАЯ ПОКРОВСКАЯ</h3>
+                                <input type="checkbox" id="choose511" name="b">
+                                <label for="choose511" class="choice2">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="img/location6.jpg" alt="Сотрудник 1">
+                        </div>
+                        <div class="event">
+                            <div>
+                                <h3>КОМСОМОЛЬСКАЯ ПЛОЩАДЬ</h3>
+                                <input type="checkbox" id="choose611" name="b">
+                                <label for="choose611" class="choice2">(ВЫБРАТЬ)</label>
+                            </div>
+                            <img src="img/location4.jpg" alt="Сотрудник 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label for="z1" class="bar1">1</label>
+                    <label for="z2" class="bar2">2</label>
+                    <label for="z3" class="bar3">3</label>
+                    <label for="z4" class="bar4">4</label>
+                    <label for="z5" class="bar5">5</label>
+                    <label for="z6" class="bar6">6</label>
+                </div>
+            </div>
+        </main>
+        <button>ОТПРАВИТЬ</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,552 @@
+@font-face {
+    font-family: Gropled;
+    src: url('fonts/Gropled-Bold.otf');
+}
+
+@font-face {
+    font-family: Klukva;
+    src: url('fonts/Klukva_version_01.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    --text: 2vw; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(180deg, #07482a, #0ddb7b);
+    font-family: Gropled;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li, header li a {
+    font-size: 1vw;
+    padding: 5px;
+    color: darkblue;
+    transition: all .6s;
+}
+
+header li a:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: calc(1vw*1.2);
+    transition: all .6s;
+}
+
+li select {
+    outline: none;
+    color: darkblue;
+    font-size: 1vw;
+    font-family: Gropled;
+    cursor: pointer;
+}
+
+.phone {
+    transition: all .6s;
+}
+
+.phone:hover {
+    color: transparent;
+    margin-right: 3.5vw;
+    transition: all .6s;
+    scale: 1;
+}
+
+.phone:hover::before {
+    content: '+7 (908) 164 09-44';
+    position: absolute;
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.search {
+    font-size: 1.1vw;
+    padding: 5px;
+    font-family: Klukva;
+}
+
+.coming {
+    margin: 50px;
+    text-align: center;
+}
+
+.activities {
+    margin: 0 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+.slider {
+    overflow: hidden;
+    border: 5px solid grey;
+}
+
+.navigation {
+    display: flex;
+    margin-top: 20px;
+}
+
+.bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background: rgb(7, 152, 201);
+    border-radius: 2px;
+    transition: all .4s ease;
+}
+
+.bar:hover {
+    scale: 1.2;
+    background: rgb(91, 91, 230);
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 400%;
+    display: flex;
+    background: lightblue;
+}
+
+.slide {
+    width: 25%;
+    transition: all .6s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.slide img {
+    width: 50%;
+}
+
+.slide div {
+    width: 49%;
+    padding: 0 15px;
+    font-family: Klukva;
+    font-size: 1.6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slide div h3 {
+    text-transform: uppercase;
+}
+
+.slide button {
+    width: 35%;
+    padding: 5px;
+    font-size: 1.6vw;
+    border-radius: 10px;
+    background: red;
+    border: 2px solid brown;
+    transition: all .4s ease;
+}
+
+.slide button:hover {
+    box-shadow: 0 0 10px 5px red;
+    transition: all .4s ease;
+}
+
+.slide button a {
+    color: yellow;
+}
+
+.slide button a:hover {
+    text-decoration: underline;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+.counter {
+    margin-top: 50px;
+    font-family: Gropled;
+    font-size: var(--text);
+    text-align: center;
+}
+
+.header_workers {
+    margin: 100px 0 40px 0;
+    font-family: Gropled;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.bar1, .bar2, .bar3 {
+    height: 35px;
+    width: 30px;
+    margin: 0 12px;
+    cursor: pointer;
+    background: rgb(7, 170, 135);
+    border-radius: 2px;
+    font-size: 2vw;
+    transition: all .4s ease;
+    text-align: center;
+    font-family: Gropled;
+}
+
+.navigation.n1 label:hover {
+    scale: 1.2;
+    background: rgb(133, 37, 53);
+}
+
+input[name="b"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.worker {
+    width: 50%;
+    height: 50vh;
+    overflow: hidden;
+    border: 5px solid darkgrey;
+}
+
+.workers {
+    display: flex;
+    background: lightgreen;
+    flex-direction: column;
+}
+
+.card {
+    transition: all .8s ease;
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    width: 50%;
+}
+
+.card div {
+    width: 50%;
+    padding: 0 15px;
+    font-family: Klukva;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card div h3 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+#b1:checked ~ .c1 {
+    margin-top: 0;
+}
+
+#b2:checked ~ .c1 {
+    margin-top: -70%;
+}
+
+#b3:checked ~ .c1 {
+    margin-top: -140.4%;
+}
+
+p.service_text {
+    margin-top: 80px;
+    font-family: Gropled;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.services {
+    width: 80%;
+    margin: 2% 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.services img {
+    outline: 2px solid black;
+    width: 100%;
+}
+
+.services div {
+    transition: all .5s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.services div:hover {
+    scale: 1.07;
+    transition: all .5s ease;
+}
+
+.services p {
+    font-family: Klukva;
+    font-size: 1.9vw;
+    color: black;
+    background: rgb(224, 224, 144);
+    width: 98.5%;
+    padding: 5px;
+}
+
+.event_text {
+    margin-top: 80px;
+    font-family: Gropled;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.events {
+    width: 80%;
+    margin: 2.5% 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.events div {
+    overflow: hidden;
+    border: 3px solid black;
+}
+
+.events img:hover {
+    scale: 1.2;
+    transition: .5s;
+}
+
+.events img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.location_text {
+    margin-top: 100px;
+    font-family: Gropled;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.locations {
+    width: 80%;
+    margin: 2.5% 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.locations img {
+    width: 100%;
+}
+
+.locations div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    outline: 2px solid black;
+}
+
+.locations a {
+    font-family: Klukva;
+    padding: 5px;
+    font-size: var(--text);
+    background: black;
+    width: 98.5%;
+    text-align: center;
+    transition: .3s;
+    color: yellow;
+}
+
+.locations a:hover {
+    text-decoration: underline;
+    font-size: 2.2vw;
+    transition: .3s;
+}
+
+.stages {
+    width: 80%;
+    margin: 5% 10%;
+}
+
+.stages h1 {
+    text-align: center;
+    font-family: Gropled;
+}
+
+.stages p {
+    font-family: Klukva;
+    font-size: var(--text);
+}
+
+.feedback {
+    width: 50%;
+    margin: 0 25%;
+}
+
+.feedback div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 2% 25%;
+    width: 45%;
+}
+
+.feedback input, textarea {
+    outline: none;
+    font-size: 1.6vw;
+    font-family: Klukva;
+    padding: 3px;
+    border-radius: 10px;
+    border: 2px solid;
+    background: rgb(211, 211, 137);
+    resize: none;
+}
+
+.feedback label {
+    font-size: 1.7vw;
+    margin-left: 8px;
+    font-family: Klukva;
+}
+
+.feedback .desc {
+    margin-left: 0;
+    width: 100%;
+}
+
+.feedback .millions {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.feedback .millions button, .send {
+    padding: 7px;
+    font-family: Klukva;
+    font-size: 1.4vw;
+    background: grey;
+    border: 1px solid black;
+    box-shadow: inset 0 0 10px 3px black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.feedback button:active {
+    scale: .9;
+    transition: .2s;
+}
+
+.feedback .send {
+    margin: 20px 40%;
+    font-size: 2vw;
+    background: red;
+    color: yellow;
+}
+
+footer {
+    padding: 40px 0 0 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(180deg, #0ddb7b, #07482a);
+    font-family: Gropled;
+}
+
+footer .main {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .contact {
+    display: flex;
+    justify-content: center;
+}
+
+footer .main ul {
+    display: flex;
+}
+
+footer .contact ul {
+    display: flex;
+}
+
+footer .main ul li, .main li a, footer .contact ul li, .contact li a {
+    font-size: 1.5vw;
+    padding: 5px;
+    color: darkblue;
+    transition: all .6s;
+}
+
+footer .main h1 {
+    font-size: 2.5vw;
+}
+
+footer .contact h1 {
+    font-size: 1.8vw;
+}
+
+footer .main li a:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.8vw;
+    transition: all .6s;
+}
+
+footer .contact li a:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.7vw;
+    transition: all .6s;
+}
+
+footer li select {
+    outline: none;
+    color: darkblue;
+    font-size: 1.3vw;
+    font-family: Gropled;
+    cursor: pointer;
+}
+
+footer .contact {
+    margin: 8% 0;
+}
+
+footer img {
+    transform: translateY(-12px);
+}
+
+footer img:hover {
+    transform: translateY(-7px);
+    scale: 1.3;
+}

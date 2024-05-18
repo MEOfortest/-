@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Gropled;
+    src: url('fonts/Gropled-Bold.otf');
+}
+
+@font-face {
+    font-family: Klukva;
+    src: url('fonts/Klukva_version_01.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home {
+    left: 15px;
+    top: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.home:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 20px 8px orange;
+    transition: .5s;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: white;
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 20px;
+}
+
+.picture {
+    width: 70%;
+}
+
+.picture img {
+    width: 100%;
+    outline: 2px solid black;
+}
+
+.grid {
+    margin: 10px 0;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feedback {
+    display: flex;
+    border: 2px black solid;
+    background: rgb(221, 221, 149);
+}
+
+.feedback img {
+    width: 30%;
+}
+
+.feedback div {
+    padding: 0 15px;
+    font-family: Klukva;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.down {
+    font-size: 18px;
+    color: orangered;
+}

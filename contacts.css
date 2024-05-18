@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Gropled;
+    src: url('fonts/Gropled-Bold.otf');
+}
+
+@font-face {
+    font-family: Klukva;
+    src: url('fonts/Klukva_version_01.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home {
+    left: 15px;
+    top: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.home:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 20px 8px orange;
+    transition: .5s;
+}
+
+.line {
+    width: 98%;
+}
+
+.subline {
+    width: 100%;
+    height: 10px;
+    border-radius: 30%;
+    background: brown;
+}
+
+.name {
+    font-family: Gropled;
+    font-size: 23px;
+    margin-left: 41%;
+    transform: translateY(17px);
+    background: white;
+    width: 260px;
+    text-align: center;
+    color: brown;
+}
+
+.name.n2 {
+    margin-left: 46%;
+    width: 130px;
+}
+
+.name.n3 {
+    margin-left: 43%;
+    width: 230px;
+}
+
+.map {
+    margin: 20px 0;
+    width: 95%;
+    outline: 2px solid black;
+}
+
+.map img {
+    width: 100%;
+}

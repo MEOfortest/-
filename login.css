@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Gropled;
+    src: url('fonts/Gropled-Bold.otf');
+}
+
+@font-face {
+    font-family: Klukva;
+    src: url('fonts/Klukva_version_01.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/login_back.jpg');
+    background-size: cover;
+}
+
+.home {
+    left: 15px;
+    top: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.home:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 20px 8px orange;
+    transition: .5s;
+}
+
+h1 {
+    text-align: center;
+    font-family: Gropled;
+    margin-bottom: 10px;
+    font-size: 60px;
+}
+
+form {
+    border: 3px solid red;
+    border-radius: 10px;
+    padding: 20px 40px 30px 40px;
+    font-family: Klukva;
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(42, 107, 142);
+    color: brown;
+}
+
+input {
+    font-size: 20px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 3px;
+    background: transparent;
+    font-weight: bold;
+}
+
+label {
+    transform: translateY(-25px);
+    pointer-events: none;
+    transition: .4s;
+}
+
+input:is(:focus, :valid) ~ label {
+    transition: .4s;
+}
+
+input#t1:is(:focus, :valid) ~ label.name1 {
+    transform: translateY(-48px);
+}
+
+input#t2:is(:focus, :valid) ~ label.name2 {
+    transform: translateY(-49px);
+}
+
+button {
+    width: 70%;
+    margin-left: 15%;
+    background: grey;
+    font-size: 25px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 10px;
+    border:  1px solid black;
+    font-family: Klukva;
+    font-weight: bold;
+    color:darkblue;    
+    box-shadow: inset 10px 20px 20px darkslategrey;
+}
+
+button:active {
+    scale: .9;
+}

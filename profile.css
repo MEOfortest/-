@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Gropled;
+    src: url('fonts/Gropled-Bold.otf');
+}
+
+@font-face {
+    font-family: Klukva;
+    src: url('fonts/Klukva_version_01.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(222, 217, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line {
+    width: 100%;
+    height: 50px;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    font-family: Gropled;
+    font-size: 23px;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+    background-color: #fff;
+    width: 80%;
+    padding: 50px;
+}
+
+.home {
+    left: 15px;
+    top: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.home:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 20px 8px orange;
+    transition: .5s;
+}
+
+.photo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo img {
+    width: 50%;
+}
+
+.photo button {
+    padding: 12px;
+    font-family: Gropled;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: purple;
+    color: greenyellow;
+    transition: .4s;
+}
+
+.photo button:hover {
+    box-shadow: 0 0 10px 10px purple;
+    transition: .4s;
+    border-color: blueviolet;
+    color: yellow;
+}
+
+.photo button:active {
+    scale: .9;
+}
+
+.data {
+    width: 58%;
+    margin-top: 150px;
+}
+
+.data input {
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(108, 105, 105);
+    padding: 5px;
+    color: black;
+    width: 25%;
+    margin-right: 4%;
+    font-family: Gropled;
+    pointer-events: none;
+}
+
+.data label {
+    position: absolute;
+    transform: translate(10px, -25px);
+    font-size: 20px;
+    color: rgb(108, 105, 105);
+    font-family: Gropled;
+}
+
+.data p {
+    margin: 40px 0 30px 0;
+    font-family: Klukva;
+    font-size: 25px;
+}
+
+.buttons {
+    margin-left: 18%;
+}
+
+.buttons button {
+    padding: 12px;
+    font-family: Gropled;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid black;
+    background: purple;
+    color: greenyellow;
+    transition: .2s;
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 10px 10px purple;
+    transition: .2s;
+    border-color: blueviolet;
+}
+
+.buttons button a {
+    color: yellow;
+}
+
+.buttons button:active {
+    scale: .9;
+}
+
+#edit {
+    margin-right: 50px;
+}
+
+.stocks {
+    width: 80%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+}
+
+.stocks img {
+    outline: 2px solid black;
+    width: 100%;
+}
+
+.stocks h3 {
+    font-family: Gropled;
+    padding: 10px 0;
+    font-size: 28px;
+    text-align: center;
+}
+
+.stocks p {
+    font-family: Klukva;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.container {
+    outline: 2px solid black;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.container button {
+    margin: 20px 0 20px 30%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background: brown;
+    box-shadow: inset 3px 3px 15px 5px blue;
+    width: 40%;
+    transition: .2s;
+}
+
+.container button a {
+    color: yellow;
+}
+
+.container button:hover {
+    scale: 1.1;
+    transition: .2s;
+}
+
+.text {
+    display: flex;
+}
+
+.left {
+    width: 60%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}

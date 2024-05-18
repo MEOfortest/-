@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon.ico">
+    <title>Личный кабинет пользователя</title>
+</head>
+
+<body>
+
+    <div>
+        <a href="index.html" class="home">НА ГЛАВНУЮ</a>
+    </div>
+
+    <div class="line">
+        <p class="name">ПЕРСОНАЛЬНЫЕ ДАННЫЕ</p>
+    </div>
+
+    <main>
+        <div class="photo">
+            <img src="img/user.jpg" alt="">
+            <button>ЗАГРУЗИТЬ ФОТО</button>
+            <button>УДАЛИТЬ ФОТО</button>
+        </div>
+
+        <div class="data">
+            <label for="name">Имя</label>
+            <input type="text" id="name" value="Павел">
+            <label for="familia">Фамилия</label>
+            <input type="text" id="familia" value="Красин">
+            <label for="otchestvo">Отчество</label>
+            <input type="text" id="otchestvo" value="Сергеевич">
+            <p>Мероприятий заказано: 6</p>
+            <div class="buttons">
+                <button id="edit">РЕДАКТИРОВАТЬ</button>
+                <button id="quit"><a href="login.html">ВЫЙТИ</a></button>
+            </div>
+        </div>
+    </main>
+
+    <div class="line">
+        <p class="name">МЕРОПРИЯТИЯ</p>
+    </div>
+
+    <div class="stocks">
+
+        <div class="container">
+            <h3>ПОТАНЦУЛЬКИ</h3>
+            <div class="grid">
+                <img src="activities/act1.jpg" alt="" class="service1">
+                <img src="activities/act2.webp" alt="" class="service1">
+                <img src="activities/act3.jpg" alt="" class="service1">
+                <img src="activities/act4.jpg" alt="" class="service1">
+            </div>
+            <div class="text">
+                <div class="left">
+                    <p><b>Город:</b></p>
+                    <p><b>Дата и время проведения:</b></p>
+                    <p><b>Категория мероприятия:</b></p>
+                    <p><b>Программа:</b></p>
+                    <p><b>Локация:</b></p>
+                    <p><b>Сотрудники:</b></p><br>
+                    <p><b>Итоговая стоимость:</b></p>
+                </div>
+                <div class="right">
+                    <p>Нижний Новгород</p>
+                    <p>16 апреля, 17:55</p>
+                    <p>Спортивные, Для детей</p>
+                    <p>Танцевальный батл</p>
+                    <p>Парк "Дубки"</p>
+                    <p>Какова Анатасия Пушкина, Авралова Аврора Джамаловна</p>
+                    <p>1500 ₽</p>
+                </div>
+            </div>
+            <button><a href="reviews.html">ОСТАВИТЬ ОТЗЫВ</a></button>
+        </div>
+
+        <div class="container">
+            <h3>НАСТОЛЬНЫЕ ИГРЫ</h3>
+            <div class="grid">
+                <img src="activities/act5.jpg" alt="" class="service1">
+                <img src="activities/act6.jpg" alt="" class="service1">
+                <img src="activities/act7.jpg" alt="" class="service1">
+                <img src="activities/act8.jpeg" alt="" class="service1">
+            </div>
+            <div class="text">
+                <div class="left">
+                    <p><b>Город:</b></p>
+                    <p><b>Дата и время проведения:</b></p>
+                    <p><b>Категория мероприятия:</b></p>
+                    <p><b>Программа:</b></p>
+                    <p><b>Локация:</b></p>
+                    <p><b>Сотрудники:</b></p><br>
+                    <p><b>Итоговая стоимость:</b></p>
+                </div>
+                <div class="right">
+                    <p>Нижний Новгород</p>
+                    <p>28 апреля, 12:00</p>
+                    <p>Развлекательные, Для детей и взрослых</p>
+                    <p>Перудо</p>
+                    <p>Большая Покровская</p>
+                    <p>Пашков Алексей Дмитриевич, Княгинина Нина Владимировна</p>
+                    <p>2000 ₽</p>
+                </div>
+            </div>
+            <button><a href="reviews.html">ОСТАВИТЬ ОТЗЫВ</a></button>
+        </div>
+
+        <div class="container">
+            <h3>МАСТЕР-КЛАССЫ</h3>
+            <div class="grid">
+                <img src="activities/act9.jpg" alt="" class="service1">
+                <img src="activities/act10.jpg" alt="" class="service1">
+                <img src="activities/act11.jpg" alt="" class="service1">
+                <img src="activities/act12.webp" alt="" class="service1">
+            </div>
+            <div class="text">
+                <div class="left">
+                    <p><b>Город:</b></p>
+                    <p><b>Дата и время проведения:</b></p>
+                    <p><b>Категория мероприятия:</b></p>
+                    <p><b>Программа:</b></p>
+                    <p><b>Локация:</b></p>
+                    <p><b>Сотрудники:</b></p><br>
+                    <p><b>Итоговая стоимость:</b></p>
+                </div>
+                <div class="right">
+                    <p>Нижний Новгород</p>
+                    <p>11 марта, 14:00</p>
+                    <p>Научные</p>
+                    <p>Информатика</p>
+                    <p>Большая Покровская</p>
+                    <p>Настина Мария Владимировна, Папкина Анатасия Павловна</p>
+                    <p>3500 ₽</p>
+                </div>
+            </div>
+            <button><a href="reviews.html">ОСТАВИТЬ ОТЗЫВ</a></button>
+        </div>
+
+        <div class="container">
+            <h3>КОМАНДНЫЕ ИГРЫ</h3>
+            <div class="grid">
+                <img src="activities/act13.jpg" alt="" class="service1">
+                <img src="activities/act14.jpeg" alt="" class="service1">
+                <img src="activities/act15.jpg" alt="" class="service1">
+                <img src="activities/act16.jpeg" alt="" class="service1">
+            </div>
+            <div class="text">
+                <div class="left">
+                    <p><b>Город:</b></p>
+                    <p><b>Дата и время проведения:</b></p>
+                    <p><b>Категория мероприятия:</b></p>
+                    <p><b>Программа:</b></p>
+                    <p><b>Локация:</b></p>
+                    <p><b>Сотрудники:</b></p><br>
+                    <p><b>Итоговая стоимость:</b></p>
+                </div>
+                <div class="right">
+                    <p>Бор</p>
+                    <p>26 марта, 12:00</p>
+                    <p>Спортивные, Для детей</p>
+                    <p>Танцевальный батл</p>
+                    <p>Красная горка</p>
+                    <p>Шпагин Олег Павлович, Авколова Мария Андреевна</p>
+                    <p>1000 ₽</p>
+                </div>
+            </div>
+            <button><a href="reviews.html">ОСТАВИТЬ ОТЗЫВ</a></button>
+        </div>
+
+        <div class="container">
+            <h3>КОНЦЕРТ</h3>
+            <div class="grid">
+                <img src="activities/act17.jpg" alt="" class="service1">
+                <img src="activities/act18.webp" alt="" class="service1">
+                <img src="activities/act19.webp" alt="" class="service1">
+                <img src="activities/act20.jpg" alt="" class="service1">
+            </div>
+            <div class="text">
+                <div class="left">
+                    <p><b>Город:</b></p>
+                    <p><b>Дата и время проведения:</b></p>
+                    <p><b>Категория мероприятия:</b></p>
+                    <p><b>Программа:</b></p>
+                    <p><b>Локация:</b></p>
+                    <p><b>Сотрудники:</b></p><br>
+                    <p><b>Итоговая стоимость:</b></p>
+                </div>
+                <div class="right">
+                    <p>Москва</p>
+                    <p>10 мая, 16:00</p>
+                    <p>Развлекательные, Для детей</p>
+                    <p>Маски-шоу</p>
+                    <p>Красная площадь</p>
+                    <p>Кукова Анастасия Алексеевна, Пакунин Алексей Михайлович</p>
+                    <p>1200 ₽</p>
+                </div>
+            </div>
+            <button><a href="reviews.html">ОСТАВИТЬ ОТЗЫВ</a></button>
+        </div>
+
+        <div class="container">
+            <h3>ИГРА НА ИНСТРУМЕНТАХ</h3>
+            <div class="grid">
+                <img src="activities/act21.jpg" alt="" class="service1">
+                <img src="activities/act22.jpg" alt="" class="service1">
+                <img src="activities/act23.jpg" alt="" class="service1">
+                <img src="activities/act24.webp" alt="" class="service1">
+            </div>
+            <div class="text">
+                <div class="left">
+                    <p><b>Город:</b></p>
+                    <p><b>Дата и время проведения:</b></p>
+                    <p><b>Категория мероприятия:</b></p>
+                    <p><b>Программа:</b></p>
+                    <p><b>Локация:</b></p>
+                    <p><b>Сотрудники:</b></p><br>
+                    <p><b>Итоговая стоимость:</b></p>
+                </div>
+                <div class="right">
+                    <p>Нижний Новгород</p>
+                    <p>16 апреля, 17:55</p>
+                    <p>Развлекательные, Для детей</p>
+                    <p>Человек-оркестр</p>
+                    <p>Комсомольская площадь</p>
+                    <p>Панин Владимир Николаевич, Запятаева Аврора Павловна</p>
+                    <p>1700 ₽</p>
+                </div>
+            </div>
+            <button><a href="reviews.html">ОСТАВИТЬ ОТЗЫВ</a></button>
+        </div>
+
+</body>
+
+</html>
