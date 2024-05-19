@@ -24,7 +24,7 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 100px;
+    padding: 40px 0;
     background: linear-gradient(180deg, #07482a, #0ddb7b);
     font-family: Gropled;
 }
@@ -598,7 +598,7 @@ footer img:hover {
     header {
         display: flex;
         flex-direction: column;
-        height: 200px;
+        padding: 20px 0;
     }
 
     header ul {
@@ -610,6 +610,7 @@ footer img:hover {
     header ul li,
     header li a {
         font-size: 4vw;
+        margin: 5px 0;
         transition: all .6s;
     }
 
@@ -620,6 +621,21 @@ footer img:hover {
 
     li select {
         font-size: 4vw;
+    }
+
+    .phone {
+        color: transparent;
+    }
+
+    .phone:hover {
+        margin-right: 0px;
+    }
+
+    .phone::before {
+        content: '+7 (908) 164 09-44';
+        position: absolute;
+        color: darkblue;
+        text-decoration: none;
     }
 
     .search {
@@ -721,7 +737,7 @@ footer img:hover {
     }
 
     .services p {
-        font-size: 5vw;
+        font-size: 6vw;
         width: 98.5%;
         padding: 5px;
     }
@@ -753,7 +769,7 @@ footer img:hover {
     }
 
     .locations a {
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
     .locations a:hover {
