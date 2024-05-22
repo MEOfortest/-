@@ -12,6 +12,8 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    font-family: Klukva;
+    transition: .5s;
 }
 
 body {
@@ -29,61 +31,29 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 20px;
-    transition: .5s;
+    font-size: 2vw;
 }
 
 .home:hover {
     text-decoration: underline;
     box-shadow: 0 0 20px 8px orange;
-    transition: .5s;
 }
 
 .line {
     width: 100%;
-    margin-bottom: 20px;
-}
-
-.subline {
-    height: 17px;
-    background: black;
-}
-
-.label {
-    font-family: Gropled;
-    font-size: 23px;
-    margin-left: 41%;
-    transform: translateY(20px);
-    background: white;
-    width: 270px;
+    margin: 20px 0;
+    background: #000;
     text-align: center;
+}
+
+span {
+    font-family: Gropled;
+    font-size: 2.5vw;
+    background: white;
     color: black;
-    z-index: 99;
-}
-
-.name2 {
-    margin-left: 43%;
-    width: 230px;
-}
-
-.name3 {
-    margin-left: 45%;
-    width: 150px;
-}
-
-.name4 {
-    margin-left: 46%;
-    width: 160px;
-}
-
-.name5 {
-    margin-left: 42%;
-    width: 290px;
-}
-
-.name6 {
-    margin-left: 47%;
-    width: 120px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 15%;
 }
 
 .description {
@@ -103,7 +73,6 @@ body {
 
 .description p {
     margin: 20px 0;
-    font-family: Klukva;
     font-size: 24px;
 }
 
@@ -112,7 +81,7 @@ body {
     border-radius: 20px;
     border: 2px solid black;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 2vw;
     background: rgb(179, 179, 101);
 }
 
@@ -122,16 +91,16 @@ body {
 
 .pagination {
     margin: 30px 0;
-    font-size: 30px;
     background: rgb(49, 169, 209);
-    height: 50px;
+    padding: 10px;
 }
 
 .pagination a {
+    padding: 10px 20px;
     margin: 0 10px;
     font-family: Gropled;
     color: blue;
-    padding: 11px 18px 6px;
+    font-size: 2.5vw;
 }
 
 .pagination a:nth-child(1) {
@@ -139,5 +108,47 @@ body {
 }
 
 .ellipsis {
-    font-size: 45px;
+    font-size: 5vw;
+}
+
+@media (max-width: 480px) {
+    .home {
+        left: 10px;
+        top: 10px;
+        padding: 10px;
+        font-size: 4vw;
+    }
+
+    span {
+        font-size: 5vw;
+        padding: 3px 7px;
+    }
+
+    .description {
+        width: 95%;
+    }
+
+    .description img {
+        width: 100%;
+    }
+
+    .description p {
+        font-size: 6vw;
+        margin: 5px 0;
+    }
+
+    .description button {
+        font-size: 5vw;
+    }
+
+    .pagination {
+        margin: 30px 0;
+        padding: 10px;
+    }
+
+    .pagination a {
+        padding: 10px 15px;
+        margin: 0 5px;
+        font-size: 4vw;
+    }
 }

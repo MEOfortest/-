@@ -29,7 +29,7 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 1.5vw;
     transition: .5s;
 }
 
@@ -48,16 +48,14 @@ body {
     color: white;
     letter-spacing: 2px;
     width: 100%;
+    font-size: 1vw;
     padding: 20px 0;
 }
 
 .picture {
-    width: 70%;
-}
-
-.picture img {
-    width: 100%;
+    width: 60%;
     outline: 2px solid black;
+    margin: 5px 0;
 }
 
 .grid {
@@ -81,7 +79,7 @@ body {
 .feedback div {
     padding: 0 15px;
     font-family: Klukva;
-    font-size: 20px;
+    font-size: 1.5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -89,6 +87,40 @@ body {
 }
 
 .down {
-    font-size: 18px;
+    font-size: 1.2vw;
     color: orangered;
+}
+
+@media (max-width: 480px) {
+    .home {
+        left: 10px;
+        top: 10px;
+        padding: 10px;
+        font-size: 4vw;
+    }
+
+    .line {
+        font-size: 2vw;
+        padding: 10px 0;
+    }
+
+    .picture {
+        width: 80%;
+    }
+
+    .grid {
+        margin: 10px 0;
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .feedback div {
+        padding: 0 15px;
+        font-size: 4vw;
+    }
+
+    .down {
+        font-size: 3.5vw;
+    }
 }

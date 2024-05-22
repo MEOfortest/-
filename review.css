@@ -31,7 +31,7 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 1.5vw;
     transition: .5s;
 }
 
@@ -44,10 +44,12 @@ body {
 div {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 50%;
 }
 
 select, textarea, button {
-    font-size: 25px;
+    font-size: 1.8vw;
     resize: none;
     outline: none;
     border: none;
@@ -57,13 +59,14 @@ select, textarea, button {
 
 select {
     text-align: center;
-    font-size: 30px;
+    cursor: pointer;
 }
 
 textarea {
     font-family: Klukva;
     padding: 5px;
-    margin: 30% 0 20% 0;
+    margin: 10% 0;
+    width: 100%;
 }
 
 button {
@@ -74,4 +77,25 @@ button {
 button:active {
     scale: .9;
     transition: .2s;
+}
+
+@media (max-width: 480px) {
+    .home {
+        left: 10px;
+        top: 10px;
+        padding: 10px;
+        font-size: 4vw;
+    }
+    
+    div {
+        width: 80%;
+    }
+    
+    select, textarea, button {
+        font-size: 4vw;
+    }
+    
+    textarea {
+        margin: 50% 0;
+    }
 }

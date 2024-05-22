@@ -32,7 +32,7 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 1.5vw;
     transition: .5s;
 }
 
@@ -52,9 +52,14 @@ form {
     padding: 30px;
 }
 
+form h1 {
+    font-family: Gropled;
+    font-size: 2vw;
+}
+
 form button {
     font-family: Gropled;
-    font-size: 25px;
+    font-size: 2vw;
     padding: 8px;
     margin-top: 30px;
     cursor: pointer;
@@ -81,6 +86,7 @@ main {
 
 .select h2 {
     font-family: Gropled;
+    font-size: 1.5vw;
     margin-bottom: 10px;
 }
 
@@ -90,13 +96,16 @@ main {
     padding: 15px 10px;
 }
 
-.info p, .info input, select {
-    font-size: 23px;
+.info p,
+.info input,
+select {
+    font-size: 2vw;
     margin: 0 20px;
     border: none;
     border-bottom: 2px solid black;
     outline: none;
-    font-family: Klukva;;
+    font-family: Klukva;
+    ;
 }
 
 .info input[type="number"] {
@@ -105,8 +114,8 @@ main {
 
 .info label {
     position: absolute;
-    transform: translate(30px, -20px);
-    font-size: 18px;
+    transform: translate(3vw, -1.5vw);
+    font-size: 1.5vw;
     font-style: italic;
 }
 
@@ -115,14 +124,19 @@ main {
     display: flex;
 }
 
-.bar1, .bar2, .bar3, .bar4, .bar5, .bar6 {
-    height: 35px;
-    width: 30px;
+.bar1,
+.bar2,
+.bar3,
+.bar4,
+.bar5,
+.bar6 {
+    height: 2.5vw;
+    width: 2.5vw;
     margin: 6px;
     cursor: pointer;
     background: rgb(9, 159, 167);
     border-radius: 2px;
-    font-size: 30px;
+    font-size: 2.5vw;
     transition: all .4s ease;
     text-align: center;
     font-family: Gropled;
@@ -133,7 +147,9 @@ main {
     background: rgb(194, 35, 62);
 }
 
-input[name="b"], input[name="x"], input[name="z"] {
+input[name="b"],
+input[name="x"],
+input[name="z"] {
     position: absolute;
     visibility: hidden;
 }
@@ -167,7 +183,7 @@ input[name="b"], input[name="x"], input[name="z"] {
     width: 49%;
     padding: 0 15px;
     font-family: Klukva;
-    font-size: 18px;
+    font-size: 1.5vw;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -176,45 +192,45 @@ input[name="b"], input[name="x"], input[name="z"] {
 
 .card div h3 {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5vw;
 }
 
-#b1:checked ~ .c1 {
+#b1:checked~.c1 {
     margin-top: 0;
 }
 
-#b2:checked ~ .c1 {
+#b2:checked~.c1 {
     margin-top: -70%;
 }
 
-#b3:checked ~ .c1 {
+#b3:checked~.c1 {
     margin-top: -140.4%;
 }
 
-#b4:checked ~ .c1 {
+#b4:checked~.c1 {
     margin-top: -211%;
 }
 
-#b5:checked ~ .c1 {
+#b5:checked~.c1 {
     margin-top: -283%;
 }
 
-#choose1:checked ~ .choice,
-#choose2:checked ~ .choice,
-#choose3:checked ~ .choice,
-#choose4:checked ~ .choice,
-#choose5:checked ~ .choice {
+#choose1:checked~.choice,
+#choose2:checked~.choice,
+#choose3:checked~.choice,
+#choose4:checked~.choice,
+#choose5:checked~.choice {
     font-size: 0.1px;
 }
 
-#choose1:checked ~ .choice::before,
-#choose2:checked ~ .choice::before,
-#choose3:checked ~ .choice::before,
-#choose4:checked ~ .choice::before,
-#choose5:checked ~ .choice::before {
+#choose1:checked~.choice::before,
+#choose2:checked~.choice::before,
+#choose3:checked~.choice::before,
+#choose4:checked~.choice::before,
+#choose5:checked~.choice::before {
     content: 'ВЫБРАНО';
     position: relative;
-    font-size: 18px;
+    font-size: 1.5vw;
     color: yellow;
 }
 
@@ -245,7 +261,7 @@ input[name="b"], input[name="x"], input[name="z"] {
 
 .event div {
     font-family: Klukva;
-    font-size: 20px;
+    font-size: 1.3vw;
     display: flex;
     justify-content: space-evenly;
 }
@@ -254,47 +270,47 @@ input[name="b"], input[name="x"], input[name="z"] {
     padding: 8px;
 }
 
-#v1:checked ~ .s1 {
+#v1:checked~.s1 {
     margin-top: 0;
 }
 
-#v2:checked ~ .s1 {
+#v2:checked~.s1 {
     margin-top: -77%;
 }
 
-#v3:checked ~ .s1 {
+#v3:checked~.s1 {
     margin-top: -154%;
 }
 
-#v4:checked ~ .s1 {
+#v4:checked~.s1 {
     margin-top: -231%;
 }
 
-#v5:checked ~ .s1 {
+#v5:checked~.s1 {
     margin-top: -307%;
 }
 
-#v6:checked ~ .s1 {
+#v6:checked~.s1 {
     margin-top: -384%;
 }
 
-#choose11:checked ~ .choice1,
-#choose21:checked ~ .choice1,
-#choose31:checked ~ .choice1,
-#choose41:checked ~ .choice1,
-#choose51:checked ~ .choice1,
-#choose61:checked ~ .choice1 {
+#choose11:checked~.choice1,
+#choose21:checked~.choice1,
+#choose31:checked~.choice1,
+#choose41:checked~.choice1,
+#choose51:checked~.choice1,
+#choose61:checked~.choice1 {
     font-size: 0.1px;
 }
 
-#choose11:checked ~ .choice1::before,
-#choose21:checked ~ .choice1::before,
-#choose31:checked ~ .choice1::before,
-#choose41:checked ~ .choice1::before,
-#choose51:checked ~ .choice1::before,
-#choose61:checked ~ .choice1::before {
+#choose11:checked~.choice1::before,
+#choose21:checked~.choice1::before,
+#choose31:checked~.choice1::before,
+#choose41:checked~.choice1::before,
+#choose51:checked~.choice1::before,
+#choose61:checked~.choice1::before {
     content: '(ВЫБРАНО)';
-    font-size: 20px;
+    font-size: 1.3vw;
     position: relative;
     color: red;
 }
@@ -306,47 +322,47 @@ input[name="b"], input[name="x"], input[name="z"] {
     font-weight: 800;
 }
 
-#z1:checked ~ .q1 {
+#z1:checked~.q1 {
     margin-top: 0;
 }
 
-#z2:checked ~ .q1 {
+#z2:checked~.q1 {
     margin-top: -77%;
 }
 
-#z3:checked ~ .q1 {
+#z3:checked~.q1 {
     margin-top: -154%;
 }
 
-#z4:checked ~ .q1 {
+#z4:checked~.q1 {
     margin-top: -230%;
 }
 
-#z5:checked ~ .q1 {
+#z5:checked~.q1 {
     margin-top: -307%;
 }
 
-#z6:checked ~ .q1 {
+#z6:checked~.q1 {
     margin-top: -384%;
 }
 
-#choose111:checked ~ .choice2,
-#choose211:checked ~ .choice2,
-#choose311:checked ~ .choice2,
-#choose411:checked ~ .choice2,
-#choose511:checked ~ .choice2,
-#choose611:checked ~ .choice2 {
+#choose111:checked~.choice2,
+#choose211:checked~.choice2,
+#choose311:checked~.choice2,
+#choose411:checked~.choice2,
+#choose511:checked~.choice2,
+#choose611:checked~.choice2 {
     font-size: 0.1px;
 }
 
-#choose111:checked ~ .choice2::before,
-#choose211:checked ~ .choice2::before,
-#choose311:checked ~ .choice2::before,
-#choose411:checked ~ .choice2::before,
-#choose511:checked ~ .choice2::before,
-#choose611:checked ~ .choice2::before {
+#choose111:checked~.choice2::before,
+#choose211:checked~.choice2::before,
+#choose311:checked~.choice2::before,
+#choose411:checked~.choice2::before,
+#choose511:checked~.choice2::before,
+#choose611:checked~.choice2::before {
     content: '(ВЫБРАНО)';
-    font-size: 20px;
+    font-size: 1.3vw;
     position: relative;
     color: red;
 }
@@ -356,4 +372,137 @@ input[name="b"], input[name="x"], input[name="z"] {
     padding: 8px;
     color: red;
     font-weight: 800;
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow-y: visible;
+    }
+
+    .home {
+        left: 10px;
+        top: 10px;
+        padding: 10px;
+        font-size: 4vw;
+    }
+
+    form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    form h1 {
+        font-size: 5vw;
+    }
+
+    form button {
+        font-size: 4vw;
+        margin-top: 20px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .select h2 {
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+
+    .info {
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info p,
+    .info input,
+    select {
+        font-size: 3vw;
+        margin: 15px 0px;
+    }
+
+    .info label {
+        transform: translate(2vw, 0vw);
+        font-size: 2.5vw;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3,
+    .bar4,
+    .bar5,
+    .bar6 {
+        height: 6vw;
+        width: 7vw;
+        margin: 10px;
+        font-size: 6vw;
+    }
+
+    .worker {
+        width: 90%;
+        height: 26vh;
+    }
+
+    .card div {
+        font-size: 4vw;
+    }
+
+    .card div h3 {
+        font-size: 4vw;
+    }
+
+    #v4:checked~.s1 {
+        margin-top: -233%;
+    }
+
+    #v5:checked~.s1 {
+        margin-top: -309%;
+    }
+
+    #v6:checked~.s1 {
+        margin-top: -386%;
+    }
+
+    #choose1:checked~.choice::before,
+    #choose2:checked~.choice::before,
+    #choose3:checked~.choice::before,
+    #choose4:checked~.choice::before,
+    #choose5:checked~.choice::before {
+        font-size: 3vw;
+    }
+
+    .event div {
+        font-size: 4vw;
+    }
+
+    #z4:checked~.q1 {
+        margin-top: -232%;
+    }
+
+    #z5:checked~.q1 {
+        margin-top: -309%;
+    }
+
+    #z6:checked~.q1 {
+        margin-top: -386%;
+    }
+
+    #choose11:checked~.choice1::before,
+    #choose21:checked~.choice1::before,
+    #choose31:checked~.choice1::before,
+    #choose41:checked~.choice1::before,
+    #choose51:checked~.choice1::before,
+    #choose61:checked~.choice1::before {
+        font-size: 4vw;
+    }
+
+    #choose111:checked~.choice2::before,
+    #choose211:checked~.choice2::before,
+    #choose311:checked~.choice2::before,
+    #choose411:checked~.choice2::before,
+    #choose511:checked~.choice2::before,
+    #choose611:checked~.choice2::before {
+        font-size: 4vw;
+    }
 }

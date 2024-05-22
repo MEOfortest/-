@@ -19,6 +19,9 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-image: url('img/worker_back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .home {
@@ -29,7 +32,7 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 1.5vw;
     transition: .5s;
 }
 
@@ -40,54 +43,40 @@ body {
 }
 
 .line {
-    width: 98%;
-    margin-bottom: 20px;
-}
-
-.subline {
-    height: 10px;
-    border-radius: 30%;
+    width: 100%;
+    margin: 15px 0;
     background: black;
+    text-align: center;
+    border-radius: 10%;
 }
 
-.name {
+span {
     font-family: Gropled;
-    font-size: 23px;
-    margin-left: 43%;
-    transform: translateY(17px);
+    font-size: 2.5vw;
     background: white;
-    width: 240px;
-    text-align: center;
     color: black;
+    padding: 3px 10px;
+    border: 2px solid black;
+    border-radius: 15%;
 }
 
 .category {
     font-family: Gropled;
-    font-size: 23px;
+    font-size: 2vw;
 }
 
 .category::before {
     content: '• ';
     position: absolute;
-    font-size: 50px;
-    transform: translate(-20px, -16px);
+    font-size: 5vw;
+    transform: translate(-2.2vw, -1.6vw);
 }
 
 .category::after {
     content: ' •';
     position: absolute;
-    font-size: 50px;
-    transform: translate(8px, -16px);
-}
-
-.name.n2 {
-    width: 130px;
-    margin-left: 46%;
-}
-
-.name.n3 {
-    width: 170px;
-    margin-left: 45%;
+    font-size: 5vw;
+    transform: translate(1vw, -1.6vw);
 }
 
 .worker {
@@ -99,13 +88,13 @@ body {
 }
 
 .worker img {
-    width: 40%;
+    width: 30%;
 }
 
 .worker div {
     padding: 0 15px;
     font-family: Klukva;
-    font-size: 20px;
+    font-size: 1.5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -118,7 +107,7 @@ body {
 
 .worker button {
     padding: 8px;
-    font-size: 20px;
+    font-size: 1.3vw;
     cursor: pointer;
     border-radius: 10px;
     border: 2px solid black;
@@ -131,4 +120,44 @@ body {
 
 .worker button:hover {
     scale: 1.1;
+}
+
+@media (max-width: 480px) {
+    .home {
+        left: 10px;
+        top: 10px;
+        padding: 10px;
+        font-size: 4vw;
+    }
+    
+    span {
+        font-size: 5vw;
+    }
+    
+    .category {
+        font-size: 5vw;
+    }
+    
+    .category::before {
+        font-size: 10vw;
+        transform: translate(-3.7vw, -2.6vw);
+    }
+    
+    .category::after {
+        font-size: 10vw;
+        transform: translate(1.5vw, -2.6vw);
+    }
+    
+    .worker {
+        margin:10px 0;
+        width: 90%;
+    }
+
+    .worker div {
+        font-size: 3vw;
+    }
+    
+    .worker button {
+        font-size: 3vw;
+    }
 }
