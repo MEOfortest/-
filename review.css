@@ -21,6 +21,7 @@ body {
     background-image: url('img/reviews_back.jpg');
     background-size: cover;
     height: 100vh;
+    overflow-y: hidden;
 }
 
 .home {
@@ -79,6 +80,47 @@ button:active {
     transition: .2s;
 }
 
+@media (max-width: 1200px) {
+    .home {
+        left: 10px;
+        top: 10px;
+        padding: 10px;
+        font-size: 2vw;
+    }
+    
+    div {
+        width: 70%;
+    }
+    
+    select, button, textarea {
+        font-size: 3vw;
+    }
+    
+    textarea {
+        height: 40vh;
+        margin: 20% 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        font-size: 3vw;
+    }
+    
+    div {
+        width: 80%;
+    }
+    
+    select, button, textarea {
+        font-size: 3.5vw;
+    }
+    
+    textarea {
+        height: 40vh;
+        margin: 20% 0;
+    }
+}
+
 @media (max-width: 480px) {
     .home {
         left: 10px;
@@ -91,11 +133,13 @@ button:active {
         width: 80%;
     }
     
-    select, textarea, button {
-        font-size: 4vw;
+    select, button {
+        font-size: 5vw;
     }
     
     textarea {
-        margin: 50% 0;
+        font-size: 4vw;
+        height: 50vh;
+        margin: 20% 0;
     }
 }

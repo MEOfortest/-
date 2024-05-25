@@ -34,6 +34,7 @@ body {
     border-radius: 15px;
     font-size: 1.5vw;
     transition: .5s;
+    z-index: 999;
 }
 
 .home:hover {
@@ -132,6 +133,7 @@ span {
     
     span {
         font-size: 5vw;
+        z-index: 999;
     }
     
     .category {
@@ -139,13 +141,11 @@ span {
     }
     
     .category::before {
-        font-size: 10vw;
-        transform: translate(-3.7vw, -2.6vw);
+        content: ' ';
     }
     
     .category::after {
-        font-size: 10vw;
-        transform: translate(1.5vw, -2.6vw);
+        content: ' ';
     }
     
     .worker {
