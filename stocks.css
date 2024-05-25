@@ -129,6 +129,7 @@ body {
     
     .stocks h3 {
         font-size: 5vw;
+        height: 15vw;
     }
     
     .stocks p {
@@ -140,24 +141,24 @@ body {
     }
     
     .under .new {
-        font-size: 5vw;
+        font-size: 6vw;
     }
     
     .under .new::after {
-        font-size: 4vw;
+        font-size: 5vw;
     }
     
     .under .old::after {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
     
     .under .old {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
         transform: translate(-6px, 1px);
     }
     
     .under button {
         margin-left: 1%;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 }

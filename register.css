@@ -111,7 +111,6 @@ button {
     border: 1px solid black;
     font-family: Klukva;
     font-weight: larger;
-    color: yellow;
     box-shadow: inset 10px 10px 20px rgb(1, 43, 1);
 }
 
@@ -119,6 +118,9 @@ button:active {
     scale: .9;
 }
 
+button a {
+    color: yellow;
+}
 @media (max-width: 480px) {
     .home {
         left: 10px;

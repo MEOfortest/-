@@ -61,6 +61,8 @@ span {
     padding: 3px 10px;
     border: 2px solid brown;
     border-radius: 15%;
+    z-index: 999;
+    height: 10vw;
 }
 
 .map {

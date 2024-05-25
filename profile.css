@@ -34,7 +34,7 @@ body {
 .name {
     font-family: Gropled;
     font-size: 2vw;
-    padding: 15px;
+    padding: 25px 0 15px 0;
     color: white;
 }
 
@@ -302,6 +302,7 @@ main {
     
     .stocks h3 {
         font-size: 4vw;
+        height: 12vw;
     }
     
     .stocks p {
@@ -318,6 +319,6 @@ main {
     }
     
     .grid {
-        grid-gap: 5px;
+        grid-gap: 10px;
     }
 }

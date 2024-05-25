@@ -18,6 +18,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    outline: 1px solid black;
 }
 
 header {
@@ -103,7 +104,7 @@ li select {
 }
 
 .text {
-    margin: 50px 0;
+    margin: 9vw 0;
     font-size: 2vw;
     text-align: center;
     font-family: Gropled;
@@ -720,7 +721,7 @@ footer img:hover {
     header ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 25vw;
+        gap: 5vw;
     }
 
     .search {
@@ -729,7 +730,7 @@ footer img:hover {
 
     header ul li,
     header li a {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     li select {
@@ -872,6 +873,7 @@ footer img:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 15vw;
+        gap: 5vw;
     }
 
     footer .main li a:hover {
@@ -951,23 +953,22 @@ footer img:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20vw;
+        align-items: center;
     }
 
     header ul li,
     header li a {
         font-size: 4vw;
         margin: 5px 0;
-        transition: all .6s;
     }
 
     header li a:hover {
         font-size: 4.2vw;
-        transition: all .6s;
     }
 
     li select {
         font-size: 4vw;
-        height: 50px;
+        height: 10vw;
     }
 
     .phone {
@@ -982,30 +983,15 @@ footer img:hover {
         content: '+7 (908) 164 09-44';
         position: absolute;
         color: darkblue;
-        text-decoration: none;
     }
 
     .search {
         font-size: 5vw;
-        padding: 1px;
     }
 
     .text {
         font-size: 4vw;
-    }
-
-    .activities {
-        margin: 0 2vw;
-    }
-
-    .slide {
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-    }
-
-    .slide img {
-        width: 100%;
+        height: 15vw;
     }
 
     .slider {
@@ -1022,7 +1008,6 @@ footer img:hover {
         margin: 8px 0;
         width: 53%;
         font-size: 3vw;
-        cursor: pointer;
     }
 
     .navigation {
@@ -1033,13 +1018,7 @@ footer img:hover {
         font-size: 5vw;
     }
 
-    .workers {
-        grid-template-columns: 1fr;
-    }
-
     .card div {
-        width: 50%;
-        padding: 0 10px;
         font-size: 5vw;
     }
 
@@ -1050,13 +1029,13 @@ footer img:hover {
     .services {
         width: 80%;
         margin: 2% 10%;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         grid-gap: 15px;
     }
 
     .services p {
         font-size: 6vw;
-        width: 98.5%;
+        width: 98%;
         padding: 5px;
     }
 
@@ -1080,13 +1059,9 @@ footer img:hover {
         font-size: 6vw;
     }
 
-    .locations a:hover {
-        font-size: 4.8vw;
-    }
-
     .stages {
         width: 90%;
-        margin: 5%;
+        margin: 40px 5%;
     }
 
     .stages p {
@@ -1112,7 +1087,7 @@ footer img:hover {
     .feedback .millions {
         transform: translateX(-16vw);
         gap: 10px;
-        width: 100%;
+        width: 95%;
     }
 
     .feedback .millions button,
@@ -1121,7 +1096,7 @@ footer img:hover {
     }
 
     .feedback .send {
-        margin: 20px 33%;
+        margin: 10px 33%;
         font-size: 7vw;
     }
 
@@ -1187,7 +1162,7 @@ footer img:hover {
 
     footer li select {
         font-size: 3.5vw;
-        height: 50px;
+        height: 10vw;
     }
 
     footer .contact {

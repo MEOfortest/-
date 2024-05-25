@@ -55,6 +55,7 @@ span {
     padding: 4px 10px;
     border: 2px solid brown;
     border-radius: 15%;
+    z-index: 999;
 }
 
 .map {
@@ -82,6 +83,7 @@ span {
     span {
         font-size: 4vw;
         padding: 1.5px 10px;
+        height: 10vw;
     }
     
     .map {

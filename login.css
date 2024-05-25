@@ -31,7 +31,7 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 2vw;
     transition: .5s;
 }
 
@@ -44,8 +44,7 @@ body {
 h1 {
     text-align: center;
     font-family: Gropled;
-    margin-bottom: 10px;
-    font-size: 60px;
+    font-size: 6vw;
 }
 
 form {
@@ -54,7 +53,6 @@ form {
     padding: 20px 40px 30px 40px;
     font-family: Klukva;
     font-weight: bold;
-    font-size: 22px;
     display: flex;
     flex-direction: column;
     background: rgb(42, 107, 142);
@@ -62,7 +60,7 @@ form {
 }
 
 input {
-    font-size: 20px;
+    font-size: 2vw;
     margin-top: 10px;
     outline: none;
     border: none;
@@ -73,6 +71,7 @@ input {
 }
 
 label {
+    font-size: 2vw;
     transform: translateY(-25px);
     pointer-events: none;
     transition: .4s;
@@ -83,18 +82,18 @@ input:is(:focus, :valid)~label {
 }
 
 input#t1:is(:focus, :valid)~label.name1 {
-    transform: translateY(-48px);
+    transform: translateY(-5vw);
 }
 
 input#t2:is(:focus, :valid)~label.name2 {
-    transform: translateY(-49px);
+    transform: translateY(-5vw);
 }
 
 button {
     width: 70%;
     margin-left: 15%;
     background: grey;
-    font-size: 25px;
+    font-size: 3vw;
     padding: 8px;
     cursor: pointer;
     border-radius: 10px;
@@ -118,23 +117,31 @@ button:active {
     }
 
     h1 {
-        margin-bottom: 10px;
         font-size: 12vw;
+        height: 20vw;
     }
 
     form {
         padding: 10px 30px 20px 30px;
-        font-size: 6vw;
     }
-
+    
+    input {
+        font-size: 4vw;
+    }
+    
+    label {
+        font-size: 4vw;
+        transform: translateY(-5vw);
+    }
+    
     input#t1:is(:focus, :valid)~label.name1 {
-        transform: translateY(-55px);
+        transform: translateY(-9vw);
     }
-
+    
     input#t2:is(:focus, :valid)~label.name2 {
-        transform: translateY(-55px);
+        transform: translateY(-9vw);
     }
-
+    
     button {
         font-size: 6vw;
     }

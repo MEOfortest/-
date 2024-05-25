@@ -94,6 +94,7 @@ button:active {
     
     select, button, textarea {
         font-size: 3vw;
+        outline: 1px solid black;
     }
     
     textarea {
@@ -133,12 +134,11 @@ button:active {
         width: 80%;
     }
     
-    select, button {
+    select, button, textarea {
         font-size: 5vw;
     }
     
     textarea {
-        font-size: 4vw;
         height: 50vh;
         margin: 20% 0;
     }

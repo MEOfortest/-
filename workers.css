@@ -59,6 +59,7 @@ span {
     padding: 3px 10px;
     border: 2px solid black;
     border-radius: 15%;
+    z-index: 999;
 }
 
 .category {
@@ -104,10 +105,11 @@ span {
 
 .worker h3 {
     text-transform: uppercase;
+    text-align: center;
 }
 
 .worker button {
-    padding: 8px;
+    padding: 6px;
     font-size: 1.3vw;
     cursor: pointer;
     border-radius: 10px;
@@ -133,7 +135,8 @@ span {
     
     span {
         font-size: 5vw;
-        z-index: 999;
+        height: 15vw;
+        margin-bottom: 10px;
     }
     
     .category {
@@ -154,7 +157,7 @@ span {
     }
 
     .worker div {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     
     .worker button {
