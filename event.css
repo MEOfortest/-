@@ -19,9 +19,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
     background-color: rgb(222, 217, 217);
-    overflow-y: hidden;
 }
 
 .home {
@@ -32,8 +31,9 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     transition: .5s;
+    z-index: 999;
 }
 
 .home:hover {
@@ -43,6 +43,7 @@ body {
 }
 
 form {
+    margin-top: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +60,7 @@ form h1 {
 
 form button {
     font-family: Gropled;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding: 8px;
     margin-top: 30px;
     cursor: pointer;
@@ -74,6 +75,7 @@ form button:hover {
 }
 
 main {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -91,7 +93,7 @@ main {
 }
 
 .info {
-    margin: 30px 0;
+    margin: 30px 0 0 0;
     display: flex;
     padding: 15px 10px;
 }
@@ -99,13 +101,12 @@ main {
 .info p,
 .info input,
 select {
-    font-size: 2vw;
+    font-size: 1.8vw;
     margin: 0 20px;
     border: none;
     border-bottom: 2px solid black;
     outline: none;
     font-family: Klukva;
-    ;
 }
 
 .info input[type="number"] {
@@ -114,7 +115,7 @@ select {
 
 .info label {
     position: absolute;
-    transform: translate(3vw, -1.5vw);
+    transform: translate(2.5vw, -1.5vw);
     font-size: 1.5vw;
     font-style: italic;
 }
@@ -130,16 +131,17 @@ select {
 .bar4,
 .bar5,
 .bar6 {
-    height: 2.5vw;
-    width: 2.5vw;
+    height: 2vw;
+    width: 2vw;
     margin: 6px;
     cursor: pointer;
     background: rgb(9, 159, 167);
     border-radius: 2px;
-    font-size: 2.5vw;
+    font-size: 2vw;
     transition: all .4s ease;
     text-align: center;
     font-family: Gropled;
+    user-select: none;
 }
 
 .navigation label:hover {
@@ -156,7 +158,7 @@ input[name="z"] {
 
 .worker {
     width: 86%;
-    height: 33.5vh;
+    height: 38vh;
     overflow: hidden;
     border: 5px solid rgb(114, 69, 69);
 }
@@ -170,9 +172,10 @@ input[name="z"] {
 
 .card {
     width: 100%;
-    transition: all .8s ease;
     display: flex;
     justify-content: center;
+    height: 0;
+    display: none;
 }
 
 .card img {
@@ -187,7 +190,8 @@ input[name="z"] {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 1vw;
 }
 
 .card div h3 {
@@ -195,31 +199,49 @@ input[name="z"] {
     font-size: 1.5vw;
 }
 
-#b1:checked~.c1 {
+#b1:checked~.c1,
+#b2:checked~.c2,
+#b3:checked~.c3,
+#b4:checked~.c4,
+#b5:checked~.c5,
+#v1:checked~.s1,
+#v2:checked~.s2,
+#v3:checked~.s3,
+#v4:checked~.s4,
+#v5:checked~.s5,
+#v6:checked~.s6,
+#z1:checked~.q1,
+#z2:checked~.q2,
+#z3:checked~.q3,
+#z4:checked~.q4,
+#z5:checked~.q5,
+#z6:checked~.q6 {
     margin-top: 0;
+    height: 38vh;
+    display: flex;
 }
 
-#b2:checked~.c1 {
-    margin-top: -70%;
-}
-
-#b3:checked~.c1 {
-    margin-top: -140.4%;
-}
-
-#b4:checked~.c1 {
-    margin-top: -211%;
-}
-
-#b5:checked~.c1 {
-    margin-top: -283%;
+main label {
+    user-select: none;
 }
 
 #choose1:checked~.choice,
 #choose2:checked~.choice,
 #choose3:checked~.choice,
 #choose4:checked~.choice,
-#choose5:checked~.choice {
+#choose5:checked~.choice,
+#choose11:checked~.choice1,
+#choose21:checked~.choice1,
+#choose31:checked~.choice1,
+#choose41:checked~.choice1,
+#choose51:checked~.choice1,
+#choose61:checked~.choice1,
+#choose111:checked~.choice2,
+#choose211:checked~.choice2,
+#choose311:checked~.choice2,
+#choose411:checked~.choice2,
+#choose511:checked~.choice2,
+#choose611:checked~.choice2 {
     font-size: 0.1px;
 }
 
@@ -237,13 +259,15 @@ input[name="z"] {
 .choice {
     cursor: pointer;
     background: green;
-    padding: 8px;
+    padding: 6px;
     color: yellow;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-.choice:hover {
+.choice:hover,
+.choice1:hover,
+.choice2:hover {
     scale: 1.1;
 }
 
@@ -253,6 +277,8 @@ input[name="z"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 0;
+    display: none;
 }
 
 .event img {
@@ -263,44 +289,12 @@ input[name="z"] {
     font-family: Klukva;
     font-size: 1.3vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 5px;
 }
 
 .event div h3 {
     padding: 8px;
-}
-
-#v1:checked~.s1 {
-    margin-top: 0;
-}
-
-#v2:checked~.s1 {
-    margin-top: -77%;
-}
-
-#v3:checked~.s1 {
-    margin-top: -154%;
-}
-
-#v4:checked~.s1 {
-    margin-top: -231%;
-}
-
-#v5:checked~.s1 {
-    margin-top: -307%;
-}
-
-#v6:checked~.s1 {
-    margin-top: -384%;
-}
-
-#choose11:checked~.choice1,
-#choose21:checked~.choice1,
-#choose31:checked~.choice1,
-#choose41:checked~.choice1,
-#choose51:checked~.choice1,
-#choose61:checked~.choice1 {
-    font-size: 0.1px;
 }
 
 #choose11:checked~.choice1::before,
@@ -308,53 +302,7 @@ input[name="z"] {
 #choose31:checked~.choice1::before,
 #choose41:checked~.choice1::before,
 #choose51:checked~.choice1::before,
-#choose61:checked~.choice1::before {
-    content: '(ВЫБРАНО)';
-    font-size: 1.3vw;
-    position: relative;
-    color: red;
-}
-
-.choice1 {
-    cursor: pointer;
-    padding: 8px;
-    color: red;
-    font-weight: 800;
-}
-
-#z1:checked~.q1 {
-    margin-top: 0;
-}
-
-#z2:checked~.q1 {
-    margin-top: -77%;
-}
-
-#z3:checked~.q1 {
-    margin-top: -154%;
-}
-
-#z4:checked~.q1 {
-    margin-top: -230%;
-}
-
-#z5:checked~.q1 {
-    margin-top: -307%;
-}
-
-#z6:checked~.q1 {
-    margin-top: -384%;
-}
-
-#choose111:checked~.choice2,
-#choose211:checked~.choice2,
-#choose311:checked~.choice2,
-#choose411:checked~.choice2,
-#choose511:checked~.choice2,
-#choose611:checked~.choice2 {
-    font-size: 0.1px;
-}
-
+#choose61:checked~.choice1::before,
 #choose111:checked~.choice2::before,
 #choose211:checked~.choice2::before,
 #choose311:checked~.choice2::before,
@@ -367,6 +315,7 @@ input[name="z"] {
     color: red;
 }
 
+.choice1,
 .choice2 {
     cursor: pointer;
     padding: 8px;
@@ -374,21 +323,214 @@ input[name="z"] {
     font-weight: 800;
 }
 
-@media (max-width: 480px) {
-    body {
-        overflow-y: visible;
-    }
-
+@media (max-width: 1200px) {
     .home {
         left: 10px;
         top: 10px;
         padding: 10px;
-        font-size: 4vw;
+        font-size: 2vw;
     }
 
     form {
-        width: 90%;
+        margin-top: 9vh;
+        width: 95%;
         padding: 10px;
+    }
+
+    form h1 {
+        font-size: 3vw;
+    }
+
+    form button {
+        font-size: 2vw;
+        margin-top: 20px;
+    }
+
+    main {
+        margin-top: 10px;
+    }
+
+    .select h2 {
+        font-size: 2vw;
+    }
+
+    .info p,
+    .info input,
+    select {
+        font-size: 2.2vw;
+    }
+
+    .info label {
+        transform: translate(3vw, -1.5vw);
+        font-size: 1.7vw;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3,
+    .bar4,
+    .bar5,
+    .bar6 {
+        height: 3vw;
+        width: 3vw;
+        font-size: 3vw;
+    }
+
+    .worker {
+        height: 22vh;
+    }
+
+    .card div {
+        font-size: 2vw;
+        gap: 1vw;
+    }
+
+    .card div h3 {
+        font-size: 2vw;
+    }
+
+    #b1:checked~.c1,
+    #b2:checked~.c2,
+    #b3:checked~.c3,
+    #b4:checked~.c4,
+    #b5:checked~.c5,
+    #v1:checked~.s1,
+    #v2:checked~.s2,
+    #v3:checked~.s3,
+    #v4:checked~.s4,
+    #v5:checked~.s5,
+    #v6:checked~.s6,
+    #z1:checked~.q1,
+    #z2:checked~.q2,
+    #z3:checked~.q3,
+    #z4:checked~.q4,
+    #z5:checked~.q5,
+    #z6:checked~.q6 {
+        height: 22vh;
+    }
+
+    .event div {
+        font-size: 1.6vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        font-size: 3vw;
+    }
+
+    form h1 {
+        font-size: 4vw;
+    }
+
+    form button {
+        font-size: 3vw;
+        margin-top: 20px;
+    }
+
+    main {
+        margin-top: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .select h2 {
+        font-size: 3vw;
+        margin-bottom: 10px;
+    }
+
+    .info {
+        margin: 10px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info p,
+    .info input,
+    select {
+        font-size: 3.5vw;
+        margin: 15px 0px;
+    }
+
+    .info label {
+        transform: translate(2vw, -1vw);
+        font-size: 2.5vw;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3,
+    .bar4,
+    .bar5,
+    .bar6 {
+        height: 4vw;
+        width: 4vw;
+        margin: 8px;
+        font-size: 3vw;
+    }
+
+    .worker {
+        width: 90%;
+        height: 26vh;
+    }
+
+    .card div {
+        font-size: 2.5vw;
+        gap: 1vw;
+    }
+
+    .card div h3 {
+        font-size: 3vw;
+    }
+
+    #b1:checked~.c1,
+    #b2:checked~.c2,
+    #b3:checked~.c3,
+    #b4:checked~.c4,
+    #b5:checked~.c5,
+    #v1:checked~.s1,
+    #z1:checked~.q1,
+    #v2:checked~.s2,
+    #z2:checked~.q2,
+    #v3:checked~.s3,
+    #z3:checked~.q3,
+    #v4:checked~.s4,
+    #z4:checked~.q4,
+    #v5:checked~.s5,
+    #z5:checked~.q5,
+    #v6:checked~.s6,
+    #z6:checked~.q6 {
+        height: 27vh;
+    }
+
+    #choose1:checked~.choice::before,
+    #choose2:checked~.choice::before,
+    #choose3:checked~.choice::before,
+    #choose4:checked~.choice::before,
+    #choose5:checked~.choice::before,
+    #choose11:checked~.choice1::before,
+    #choose21:checked~.choice1::before,
+    #choose31:checked~.choice1::before,
+    #choose41:checked~.choice1::before,
+    #choose51:checked~.choice1::before,
+    #choose61:checked~.choice1::before,
+    #choose111:checked~.choice2::before,
+    #choose211:checked~.choice2::before,
+    #choose311:checked~.choice2::before,
+    #choose411:checked~.choice2::before,
+    #choose511:checked~.choice2::before,
+    #choose611:checked~.choice2::before {
+        font-size: 4vw;
+    }
+
+    .event div {
+        font-size: 2.4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        font-size: 4vw;
     }
 
     form h1 {
@@ -397,34 +539,28 @@ input[name="z"] {
 
     form button {
         font-size: 4vw;
-        margin-top: 20px;
     }
 
     main {
+        margin-top: 10px;
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .select h2 {
         font-size: 5vw;
-        margin-bottom: 10px;
-    }
-
-    .info {
-        margin: 30px 0;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .info p,
     .info input,
     select {
-        font-size: 3vw;
+        font-size: 4vw;
         margin: 15px 0px;
     }
 
     .info label {
         transform: translate(2vw, 0vw);
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
 
     .bar1,
@@ -435,74 +571,65 @@ input[name="z"] {
     .bar6 {
         height: 6vw;
         width: 7vw;
-        margin: 10px;
+        margin: 8px;
         font-size: 6vw;
     }
 
     .worker {
         width: 90%;
-        height: 26vh;
+        height: 32vh;
     }
 
     .card div {
         font-size: 4vw;
+        gap: 6vw;
     }
 
     .card div h3 {
-        font-size: 4vw;
+        font-size: 5vw;
     }
 
-    #v4:checked~.s1 {
-        margin-top: -233%;
-    }
-
-    #v5:checked~.s1 {
-        margin-top: -309%;
-    }
-
-    #v6:checked~.s1 {
-        margin-top: -386%;
+    #b1:checked~.c1,
+    #b2:checked~.c2,
+    #b3:checked~.c3,
+    #b4:checked~.c4,
+    #b5:checked~.c5,
+    #v1:checked~.s1,
+    #z1:checked~.q1,
+    #v2:checked~.s2,
+    #z2:checked~.q2,
+    #v3:checked~.s3,
+    #z3:checked~.q3,
+    #v4:checked~.s4,
+    #z4:checked~.q4,
+    #v5:checked~.s5,
+    #z5:checked~.q5,
+    #v6:checked~.s6,
+    #z6:checked~.q6 {
+        height: 32vh;
     }
 
     #choose1:checked~.choice::before,
     #choose2:checked~.choice::before,
     #choose3:checked~.choice::before,
     #choose4:checked~.choice::before,
-    #choose5:checked~.choice::before {
-        font-size: 3vw;
-    }
-
-    .event div {
-        font-size: 4vw;
-    }
-
-    #z4:checked~.q1 {
-        margin-top: -232%;
-    }
-
-    #z5:checked~.q1 {
-        margin-top: -309%;
-    }
-
-    #z6:checked~.q1 {
-        margin-top: -386%;
-    }
-
+    #choose5:checked~.choice::before,
     #choose11:checked~.choice1::before,
     #choose21:checked~.choice1::before,
     #choose31:checked~.choice1::before,
     #choose41:checked~.choice1::before,
     #choose51:checked~.choice1::before,
-    #choose61:checked~.choice1::before {
-        font-size: 4vw;
-    }
-
+    #choose61:checked~.choice1::before,
     #choose111:checked~.choice2::before,
     #choose211:checked~.choice2::before,
     #choose311:checked~.choice2::before,
     #choose411:checked~.choice2::before,
     #choose511:checked~.choice2::before,
     #choose611:checked~.choice2::before {
+        font-size: 4vw;
+    }
+
+    .event div {
         font-size: 4vw;
     }
 }

@@ -22,7 +22,7 @@
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     transition: .5s;
 }
 
@@ -33,7 +33,7 @@
 }
 
 img {
-    width: 45%;
+    width: 35%;
     margin: 10px 0;
 }
 
@@ -43,37 +43,74 @@ img {
 
 p:not(.image) {
     font-family: Klukva;
-    font-size: 2vw;
-    margin: 0 20%;
+    font-size: 1.8vw;
+    margin: 0 15%;
 }
 
 h1 {
     text-align: center;
     font-family: Gropled;
+    font-size: 2.5vw;
 }
 
 div {
     margin-bottom: 100px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
     .home {
         margin: 10px;
         padding: 10px;
-        font-size: 4vw;
+        font-size: 2vw;
     }
-    
+
     img {
-        width: 85%;
+        width: 50%;
         margin: 10px 0;
     }
-    
-    p:not(.image) {
-        font-size: 5vw;
-        margin: 0 5%;
+
+    h1 {
+        font-size: 3vw;
     }
-    
+
+    p:not(.image) {
+        font-size: 2.3vw;
+        margin: 0 10%;
+    }
+
     div {
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        font-size: 2.5vw;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    p:not(.image) {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        font-size: 3.5vw;
+    }
+
+    img {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    p:not(.image) {
+        font-size: 3.5vw;
     }
 }

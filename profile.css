@@ -23,6 +23,33 @@ body {
     flex-direction: column;
 }
 
+.home {
+    left: 15px;
+    top: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 1.3vw;
+}
+
+.home:hover, .home2:hover {
+    text-decoration: underline;
+    box-shadow: 0 0 20px 8px orange;
+}
+
+.home2 {
+    right: 15px;
+    top: 15px;
+    padding: 15px;
+    background: orange;
+    position: fixed;
+    color: black;
+    border-radius: 15px;
+    font-size: 1.3vw;
+}
+
 .line {
     width: 100%;
     background: blue;
@@ -34,7 +61,7 @@ body {
 .name {
     font-family: Gropled;
     font-size: 2vw;
-    padding: 25px 0 15px 0;
+    padding: 20px 0;
     color: white;
 }
 
@@ -45,22 +72,6 @@ main {
     background-color: #fff;
     width: 80%;
     padding: 50px;
-}
-
-.home {
-    left: 15px;
-    top: 15px;
-    padding: 15px;
-    background: orange;
-    position: fixed;
-    color: black;
-    border-radius: 15px;
-    font-size: 1.5vw;
-}
-
-.home:hover {
-    text-decoration: underline;
-    box-shadow: 0 0 20px 8px orange;
 }
 
 .photo {
@@ -77,7 +88,7 @@ main {
 .photo button {
     padding: 12px;
     font-family: Gropled;
-    font-size: 1.3vw;
+    font-size: 1vw;
     cursor: pointer;
     margin-top: 20px;
     border-radius: 10px;
@@ -98,11 +109,11 @@ main {
 
 .data {
     width: 58%;
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 .data input {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     border: none;
     border-bottom: 2px solid rgb(108, 105, 105);
     padding: 5px;
@@ -116,7 +127,7 @@ main {
 .data label {
     position: absolute;
     transform: translate(1vw, -1.5vw);
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: rgb(108, 105, 105);
     font-family: Gropled;
 }
@@ -128,13 +139,13 @@ main {
 }
 
 .buttons {
-    margin-left: 7vw;
+    margin-left: 8vw;
 }
 
 .buttons button {
     padding: 12px;
     font-family: Gropled;
-    font-size: 1.5vw;
+    font-size: 1vw;
     cursor: pointer;
     border-radius: 10px;
     border: 1px solid black;
@@ -177,14 +188,14 @@ main {
 .stocks h3 {
     font-family: Gropled;
     padding: 10px 0;
-    font-size: 2vw;
+    font-size: 1.7vw;
     text-align: center;
 }
 
 .stocks p {
     font-family: Klukva;
     padding: 5px 10px;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 
 .container {
@@ -195,15 +206,15 @@ main {
 }
 
 .container button {
-    margin: 20px 0 20px 30%;
+    margin: 20px 35%;
     padding: 10px;
     cursor: pointer;
-    font-size: 1.3vw;
+    font-size: 1vw;
     border-radius: 15px;
     border: 1px solid black;
     background: brown;
     box-shadow: inset 3px 3px 15px 5px blue;
-    width: 40%;
+    width: 30%;
     transition: .2s;
 }
 
@@ -232,92 +243,246 @@ main {
     border-bottom: 2px solid black;
 }
 
-@media (max-width: 480px) {
-    .name {
-        font-size: 4vw;
-    }
-    
-    main {
-        padding: 20px 5px;
-        width: 95%;
-        gap: 2vw;
-    }
-    
+@media (max-width: 1200px) {
     .home {
         left: 10px;
         top: 10px;
         padding: 10px;
-        font-size: 4vw;
+        font-size: 2vw;
     }
-    
+
+    .home2 {
+        right: 10px;
+        top: 10px;
+        padding: 10px;
+        font-size: 2vw;
+    }
+
+    .name {
+        font-size: 2vw;
+    }
+
+    main {
+        width: 85%;
+    }
+
+    .photo button {
+        font-size: 1.5vw;
+    }
+
+    .data {
+        width: 58%;
+    }
+
+    .data input {
+        font-size: 1.5vw;
+        width: 25%;
+        margin-right: 4%;
+    }
+
+    .data label {
+        transform: translate(1vw, -1.5vw);
+        font-size: 1.5vw;
+    }
+
+    .data p {
+        margin: 40px 0 30px 0;
+        font-size: 2.5vw;
+    }
+
+    .buttons {
+        margin-left: 6vw;
+        padding: 8px;
+    }
+
+    .buttons button {
+        font-size: 1.5vw;
+    }
+
+    #edit {
+        margin-right: 20px;
+    }
+
+    .stocks {
+        width: 85%;
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3vw;
+    }
+
+    .stocks h3 {
+        font-size: 2vw;
+    }
+
+    .stocks p {
+        font-size: 1.7vw;
+    }
+
+    .container button {
+        width: 40%;
+        margin: 20px 30%;
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .home, .home2 {
+        font-size: 2.5vw;
+    }
+
+    .name {
+        font-size: 3vw;
+    }
+
+    main {
+        justify-content: space-around;
+        margin: 5%;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .photo {
+        width: 35%;
+    }
+
+    .photo button {
+        font-size: 2vw;
+    }
+
+    .data {
+        margin-top: 70px;
+    }
+
+    .data input {
+        font-size: 2.5vw;
+        width: 28%;
+        margin-right: 0;
+    }
+
+    .data label {
+        transform: translate(1.2vw, -1.5vw);
+        font-size: 2vw;
+    }
+
+    .data p {
+        font-size: 3vw;
+    }
+
+    .buttons {
+        margin-left: 2vw;
+    }
+
+    .buttons button {
+        font-size: 2vw;
+        padding: 8px;
+    }
+
+    .stocks {
+        width: 80%;
+        margin: 20px 0;
+        grid-template-columns: 1fr;
+        grid-gap: 3vw;
+    }
+
+    .stocks h3 {
+        font-size: 3vw;
+    }
+
+    .stocks p {
+        font-size: 3vw;
+    }
+
+    .container button {
+        width: 40%;
+        margin: 20px 30%;
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 4vw;
+        padding: 15px 0;
+    }
+
+    main {
+        padding: 20px 5px;
+        width: 95%;
+        justify-content: space-between;
+    }
+
+    .home, .home2 {
+        font-size: 3.5vw;
+    }
+
     .photo {
         width: 40%;
     }
-    
+
     .photo img {
         width: 50%;
     }
-    
+
     .photo button {
         font-size: 2vw;
         margin-top: 10px;
     }
-    
+
     .data {
         margin-top: 40px;
     }
-    
+
     .data input {
         font-size: 2.5vw;
         width: 25%;
         margin-right: 0%;
     }
-    
+
     .data label {
         transform: translate(1.5vw, -1.5vw);
         font-size: 2.3vw;
     }
-    
+
     .data p {
         margin: 15px 0;
-        font-size: 3vw;
+        font-size: 4vw;
     }
-    
+
     .buttons {
         margin-left: 3vw;
     }
-    
+
     .buttons button {
         font-size: 2vw;
     }
-    
+
     #edit {
         margin-right: 20px;
     }
-    
+
     .stocks {
         width: 95%;
         grid-template-columns: 1fr;
     }
-    
+
     .stocks h3 {
         font-size: 4vw;
-        height: 12vw;
     }
-    
+
     .stocks p {
         font-size: 4vw;
     }
-    
+
     .container button {
         font-size: 3vw;
         width: 40%;
     }
-    
+
     .left {
-        width: 65%;
+        width: 70%;
     }
-    
+
     .grid {
         grid-gap: 10px;
     }

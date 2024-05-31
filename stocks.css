@@ -29,7 +29,7 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     transition: .5s;
 }
 
@@ -40,11 +40,11 @@ body {
 }
 
 .stocks {
-    width: 90%;
+    width: 70%;
     margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 60px;
 }
 
 .stocks img {
@@ -55,14 +55,14 @@ body {
 .stocks h3 {
     font-family: Gropled;
     padding: 10px 0;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
 }
 
 .stocks p {
     font-family: Klukva;
     padding: 5px;
-    font-size: 2.5vw;
+    font-size: 1.5vw;
 }
 
 .container {
@@ -74,36 +74,36 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
 .under .new {
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 600;
 }
 
 .under .new::after {
     content: '₽';
-    font-size: 2.5vw;
+    font-size: 1.5vw;
 }
 
 .under .old::after {
     content: '₽';
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .under .old {
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     transform: translate(-6px, 3px);
     text-decoration: line-through;
     color: grey;
 }
 
 .under button {
-    margin-left: 10%;
+    margin-left: 5%;
     padding: 8px;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 1.2vw;
     border-radius: 15px;
     border: 1px solid black;
     background: green;
@@ -114,11 +114,88 @@ body {
     scale: 1.1;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
     .home {
         left: 10px;
         top: 10px;
         padding: 10px;
+        font-size: 2vw;
+    }
+    
+    .stocks {
+        width: 85%;
+    }
+    
+    .stocks h3 {
+        font-size: 2.5vw;
+    }
+    
+    .stocks p {
+        font-size: 2vw;
+    }
+    
+    .under .new {
+        font-size: 2.5vw;
+    }
+    
+    .under .new::after {
+        font-size: 2vw;
+    }
+    
+    .under .old::after {
+        font-size: 1.5vw;
+    }
+    
+    .under .old {
+        font-size: 2vw;
+    }
+    
+    .under button {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        font-size: 3vw;
+    }
+    
+    .stocks {
+        width: 90%;
+        gap: 20px;
+    }
+    
+    .stocks h3 {
+        font-size: 3.5vw;
+    }
+    
+    .stocks p {
+        font-size: 3vw;
+    }
+    
+    .under .new {
+        font-size: 3.5vw;
+    }
+    
+    .under .new::after {
+        font-size: 3vw;
+    }
+    
+    .under .old::after {
+        font-size: 2.5vw;
+    }
+    
+    .under .old {
+        font-size: 3vw;
+    }
+    
+    .under button {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
         font-size: 4vw;
     }
     
@@ -129,7 +206,6 @@ body {
     
     .stocks h3 {
         font-size: 5vw;
-        height: 15vw;
     }
     
     .stocks p {
@@ -141,24 +217,24 @@ body {
     }
     
     .under .new {
-        font-size: 6vw;
-    }
-    
-    .under .new::after {
         font-size: 5vw;
     }
     
+    .under .new::after {
+        font-size: 4vw;
+    }
+    
     .under .old::after {
-        font-size: 4.5vw;
+        font-size: 3.5vw;
     }
     
     .under .old {
-        font-size: 5.5vw;
+        font-size: 4.5vw;
         transform: translate(-6px, 1px);
     }
     
     .under button {
         margin-left: 1%;
-        font-size: 3.5vw;
+        font-size: 2.5vw;
     }
 }

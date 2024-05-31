@@ -12,7 +12,6 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    font-family: Klukva;
     transition: .5s;
 }
 
@@ -31,7 +30,7 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 2vw;
+    font-size: 1.3vw;
 }
 
 .home:hover {
@@ -48,7 +47,7 @@ body {
 
 span {
     font-family: Gropled;
-    font-size: 2.5vw;
+    font-size: 2vw;
     background: white;
     color: black;
     padding: 5px 10px;
@@ -57,7 +56,7 @@ span {
 }
 
 .description {
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,14 +65,15 @@ span {
 }
 
 .description img {
-    width: 70%;
+    width: 60%;
     margin-bottom: 10px;
     border: 2px solid black;
 }
 
 .description p {
     margin: 20px 0;
-    font-size: 24px;
+    font-size: 1.8vw;
+    font-family: Klukva;
 }
 
 .description button {
@@ -81,7 +81,7 @@ span {
     border-radius: 20px;
     border: 2px solid black;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 1.5vw;
     background: rgb(179, 179, 101);
 }
 
@@ -111,17 +111,78 @@ span {
     font-size: 5vw;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
     .home {
         left: 10px;
         top: 10px;
         padding: 10px;
+        font-size: 2vw;
+    }
+    
+    span {
+        font-size: 2.5vw;
+    }
+    
+    .description {
+        width: 90%;
+    }
+    
+    .description img {
+        width: 60%;
+    }
+    
+    .description p {
+        font-size: 2.3vw;
+    }
+    
+    .description button {
+        font-size: 2vw;
+    }
+    
+    .pagination a {
+        padding: 10px 20px;
+        margin: 0 5px;
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        font-size: 2.5vw;
+    }
+    
+    span {
+        font-size: 3.5vw;
+    }
+    
+    .description {
+        width: 95%;
+    }
+    
+    .description img {
+        width: 85%;
+    }
+    
+    .description p {
+        font-size: 4vw;
+    }
+    
+    .description button {
+        font-size: 3vw;
+    }
+    
+    .pagination a {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
         font-size: 4vw;
     }
 
     span {
         font-size: 5vw;
-        padding: 3px 7px;
     }
 
     .description {
@@ -138,7 +199,7 @@ span {
     }
 
     .description button {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
 
     .pagination {
@@ -149,6 +210,6 @@ span {
     .pagination a {
         padding: 10px 15px;
         margin: 0 5px;
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
 }

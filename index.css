@@ -18,7 +18,6 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    outline: 1px solid black;
 }
 
 header {
@@ -26,7 +25,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 40px 0;
+    padding: 30px 0;
     background: linear-gradient(180deg, #07482a, #0ddb7b);
     font-family: Gropled;
 }
@@ -77,7 +76,7 @@ header li a:hover {
 li select {
     outline: none;
     color: darkblue;
-    font-size: 1vw;
+    font-size: 1.3vw;
     padding: 3px;
     font-family: Gropled;
     cursor: pointer;
@@ -104,7 +103,7 @@ li select {
 }
 
 .text {
-    margin: 9vw 0;
+    margin: 2vw 0;
     font-size: 2vw;
     text-align: center;
     font-family: Gropled;
@@ -125,12 +124,12 @@ li select {
 
 .navigation {
     display: flex;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .bar {
-    height: 8px;
-    width: 30px;
+    height: 10px;
+    width: 33px;
     margin: 6px;
     cursor: pointer;
     background: rgb(7, 152, 201);
@@ -183,7 +182,7 @@ input[name="r"] {
 .slide button {
     width: 35%;
     padding: 5px;
-    font-size: 1.6vw;
+    font-size: 1vw;
     border-radius: 10px;
     background: red;
     border: 2px solid brown;
@@ -272,7 +271,7 @@ input[name="r"] {
 }
 
 .worker button a {
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: yellow;
 }
 
@@ -565,7 +564,7 @@ footer img:hover {
     }
 
     .text {
-        font-size: 3vw;
+        font-size: 2,5vw;
     }
 
     .activities {
@@ -577,8 +576,8 @@ footer img:hover {
     }
 
     .bar {
-        height: 12px;
-        width: 45px;
+        height: 10px;
+        width: 40px;
         margin: 6px;
     }
 
@@ -611,8 +610,8 @@ footer img:hover {
     }
 
     .services {
-        width: 95%;
-        margin: 2% 2.5%;
+        width: 90%;
+        margin: 2% 5%;
         grid-gap: 20px;
     }
 
@@ -622,13 +621,13 @@ footer img:hover {
     }
 
     .events {
-        width: 95%;
-        margin: 2.5%;
+        width: 90%;
+        margin: 5%;
     }
 
     .locations {
-        width: 95%;
-        margin: 2.5%;
+        width: 90%;
+        margin: 5%;
         grid-gap: 20px;
     }
 
@@ -643,7 +642,7 @@ footer img:hover {
     }
 
     .stages p {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
     .feedback {
@@ -703,8 +702,7 @@ footer img:hover {
     }
 
     footer img {
-        transform: translateY(-2vw);
-        scale: .8;
+        scale: 1;
     }
 
     footer img:hover {
@@ -721,7 +719,7 @@ footer img:hover {
     header ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5vw;
+        gap: 3vw;
     }
 
     .search {
@@ -734,7 +732,21 @@ footer img:hover {
     }
 
     li select {
-        font-size: 2.5vw;
+        font-size: 3vw;
+    }
+
+    .phone {
+        color: transparent;
+    }
+
+    .phone:hover {
+        margin-right: 0px;
+    }
+
+    .phone::before {
+        content: '+7 (908) 164 09-44';
+        position: absolute;
+        color: darkblue;
     }
 
     .text {
@@ -808,15 +820,15 @@ footer img:hover {
     }
 
     .events {
-        width: 95%;
-        margin: 2.5%;
+        width: 90%;
+        margin: 5%;
         grid-template-columns: repeat(3, 1fr);
     }
 
     .locations {
         grid-template-columns: repeat(2, 1fr);
-        width: 95%;
-        margin: 2.5%;
+        width: 90%;
+        margin: 5%;
         grid-gap: 20px;
     }
 
@@ -826,7 +838,7 @@ footer img:hover {
     }
 
     .stages p {
-        font-size: 3.5vw;
+        font-size: 3.2vw;
     }
 
     .feedback {
@@ -873,7 +885,7 @@ footer img:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 15vw;
-        gap: 5vw;
+        gap: 3vw;
     }
 
     footer .main li a:hover {
@@ -913,7 +925,7 @@ footer img:hover {
     }
 
     footer .contact .images ul li a:hover {
-        font-size: 4vw;
+        font-size: 3.5vw;
         transition: .6s;
     }
 
@@ -927,14 +939,14 @@ footer img:hover {
     }
 
     footer img {
-        scale: 1.3;
-        margin: 0 20px;
+        scale: 1;
+        margin: 0;
         transform: translateY(0);
     }
 
     footer img:hover {
         transform: translateY(0);
-        scale: 1.5;
+        scale: 1.3;
     }
 }
 
@@ -958,7 +970,7 @@ footer img:hover {
 
     header ul li,
     header li a {
-        font-size: 4vw;
+        font-size: 4.5vw;
         margin: 5px 0;
     }
 
@@ -968,7 +980,7 @@ footer img:hover {
 
     li select {
         font-size: 4vw;
-        height: 10vw;
+        height: 8vw;
     }
 
     .phone {
@@ -991,7 +1003,6 @@ footer img:hover {
 
     .text {
         font-size: 4vw;
-        height: 15vw;
     }
 
     .slider {
@@ -1143,7 +1154,7 @@ footer img:hover {
     .main li a,
     footer .contact ul li,
     .contact li a {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         padding: 5px;
     }
 
@@ -1170,13 +1181,8 @@ footer img:hover {
     }
 
     footer img {
-        scale: .8;
+        scale: 1;
         margin: 0 0;
         transform: translateY(-12px);
-    }
-
-    footer img:hover {
-        transform: translateY(-7px);
-        scale: 1;
     }
 }

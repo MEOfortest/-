@@ -29,7 +29,7 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     transition: .5s;
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 .picture {
-    width: 60%;
+    width: 55%;
     outline: 2px solid black;
     margin: 5px 0;
 }
@@ -91,12 +91,68 @@ body {
     color: orangered;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
     .home {
         left: 10px;
         top: 10px;
         padding: 10px;
-        font-size: 4vw;
+        font-size: 2vw;
+    }
+    
+    .line {
+        font-size: 1.8vw;
+    }
+    
+    .picture {
+        width: 70%;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .feedback img {
+        width: 30%;
+    }
+    
+    .feedback div {
+        padding: 0 10px;
+        font-size: 2.2vw;
+    }
+
+    .down {
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        font-size: 2.5vw;
+    }
+    
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    .feedback img {
+        width: 30%;
+    }
+    
+    .feedback div {
+        padding: 0 5px;
+        font-size: 2.3vw;
+    }
+
+    .down {
+        font-size: 1.9vw;
+    }
+}
+
+@media (max-width: 660px) {
+    .home {
+        font-size: 3vw;
     }
 
     .line {
@@ -105,12 +161,12 @@ body {
     }
 
     .picture {
-        width: 80%;
+        width: 90%;
     }
 
     .grid {
         margin: 10px 0;
-        width: 90%;
+        width: 95%;
         grid-template-columns: 1fr;
         gap: 10px;
     }

@@ -32,7 +32,7 @@ body {
     position: fixed;
     color: black;
     border-radius: 15px;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     transition: .5s;
     z-index: 999;
 }
@@ -53,13 +53,12 @@ body {
 
 span {
     font-family: Gropled;
-    font-size: 2.5vw;
+    font-size: 2vw;
     background: white;
     color: black;
     padding: 3px 10px;
     border: 2px solid black;
     border-radius: 15%;
-    z-index: 999;
 }
 
 .category {
@@ -125,6 +124,73 @@ span {
     scale: 1.1;
 }
 
+@media (max-width: 1200px) {
+    .home {
+        left: 10px;
+        top: 10px;
+        padding: 10px;
+        font-size: 2vw;
+    }
+    
+    .category {
+        font-size: 2.5vw;
+    }
+    
+    .category::before {
+        transform: translate(-2.2vw, -1.4vw);
+    }
+    
+    .category::after {
+        transform: translate(1vw, -1.4vw);
+    }
+    
+    .worker {
+        width: 60%;
+    }
+    
+    .worker div {
+        font-size: 2vw;
+    }
+    
+    .worker button {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        font-size: 3vw;
+    }
+    
+    span {
+        font-size: 2.5vw;
+    }
+
+    .category {
+        font-size: 3vw;
+    }
+    
+    .category::before {
+        transform: translate(-2.2vw, -1.2vw);
+    }
+    
+    .category::after {
+        transform: translate(1vw, -1.2vw);
+    }
+    
+    .worker {
+        width: 70%;
+    }
+    
+    .worker div {
+        font-size: 2.5vw;
+    }
+    
+    .worker button {
+        font-size: 2vw;
+    }
+}
+
 @media (max-width: 480px) {
     .home {
         left: 10px;
@@ -132,34 +198,36 @@ span {
         padding: 10px;
         font-size: 4vw;
     }
-    
+
+    .line {
+        margin-bottom: 15px;
+    }
+
     span {
         font-size: 5vw;
-        height: 15vw;
-        margin-bottom: 10px;
     }
-    
+
     .category {
         font-size: 5vw;
     }
-    
+
     .category::before {
         content: ' ';
     }
-    
+
     .category::after {
         content: ' ';
     }
-    
+
     .worker {
-        margin:10px 0;
+        margin: 10px 0;
         width: 90%;
     }
 
     .worker div {
         font-size: 3.5vw;
     }
-    
+
     .worker button {
         font-size: 3vw;
     }
