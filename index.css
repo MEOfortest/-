@@ -160,7 +160,7 @@ input[name="r"] {
 
 .slide {
     width: 25%;
-    transition: all .6s ease;
+    transition: .6s;
     display: flex;
     justify-content: center;
 }
@@ -191,12 +191,12 @@ input[name="r"] {
     border-radius: 10px;
     background: red;
     border: 2px solid brown;
-    transition: all .4s ease;
+    transition: .4s;
 }
 
 .slide button:hover {
     box-shadow: 0 0 10px 5px red;
-    transition: all .4s ease;
+    transition: .4s;
 }
 
 .slide button a {
@@ -294,7 +294,7 @@ input[name="r"] {
 }
 
 .services div {
-    transition: all .5s ease;
+    transition: .5s;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -304,7 +304,7 @@ input[name="r"] {
 
 .services div:hover {
     scale: 1.05;
-    transition: all .5s ease;
+    transition: .5s;
 }
 
 .services p {
@@ -1008,7 +1008,7 @@ footer img:hover {
 
     .text {
         font-size: 4vw;
-        margin: 3.5vw 0;
+        margin: 8vw 0;
     }
 
     .slider {
@@ -1032,7 +1032,7 @@ footer img:hover {
     }
 
     .worker button a {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
 
     .card div {
@@ -1109,7 +1109,7 @@ footer img:hover {
 
     .feedback .millions button,
     .submit {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
 
     .feedback .submit {

@@ -68,6 +68,7 @@ textarea {
     padding: 5px;
     margin: 10% 0;
     width: 100%;
+    outline: 2px solid black;
 }
 
 button {
@@ -91,7 +92,6 @@ button:active {
     
     select, button, textarea {
         font-size: 3vw;
-        outline: 1px solid black;
     }
     
     textarea {
@@ -121,7 +121,7 @@ button:active {
 
 @media (max-width: 480px) {
     .home {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     
     div {

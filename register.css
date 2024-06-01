@@ -163,7 +163,7 @@ button a {
     }
 
     form {
-        padding: 15px 0 15px 15px;
+        padding: 25px 0 15px 15px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -188,7 +188,7 @@ button a {
     input#t8:is(:focus, :valid)~label.name8,
     input#t9:is(:focus, :valid)~label.name9,
     label.name6 {
-        transform: translateY(-4.2vw);
+        transform: translateY(-4vw);
         transition: .4s;
     }
 

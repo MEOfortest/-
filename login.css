@@ -149,7 +149,7 @@ button:active {
     }
 
     form {
-        padding: 20px;
+        padding: 40px 20px 15px 20px;
     }
 
     input {
@@ -158,7 +158,7 @@ button:active {
 
     label {
         font-size: 2.7vw;
-        transform: translateY(-3vw);
+        transform: translateY(-3.2vw);
     }
 
     input#t1:is(:focus, :valid)~label.name1,
@@ -189,13 +189,13 @@ button:active {
     }
 
     label {
-        font-size: 4vw;
-        transform: translateY(-5vw);
+        font-size: 4.5vw;
+        transform: translateY(-5.2vw);
     }
 
     input#t1:is(:focus, :valid)~label.name1,
     input#t2:is(:focus, :valid)~label.name2 {
-        transform: translateY(-10vw);
+        transform: translateY(-10.2vw);
     }
 
     button {
