@@ -127,8 +127,9 @@ main {
 
 .data label {
     position: absolute;
-    transform: translate(1vw, -1.5vw);
+    transform: translate(1vw, -1.2vw);
     font-size: 1.3vw;
+    font-style: italic;
     color: rgb(108, 105, 105);
     font-family: Gropled;
 }
@@ -421,7 +422,7 @@ main {
     .photo button {
         font-size: 2vw;
         margin-top: 10px;
-        padding: 9px 6px 6px 6px;
+        padding: 12px 6px 6px 6px;
     }
 
     .data {
@@ -450,7 +451,7 @@ main {
 
     .buttons button {
         font-size: 2vw;
-        padding: 9px 6px 6px 6px;
+        padding: 12px 6px 6px 6px;
     }
 
     #edit {
