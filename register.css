@@ -24,9 +24,9 @@ body {
 }
 
 .home {
-    left: 15px;
-    top: 15px;
-    padding: 15px;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
     background: orange;
     position: fixed;
     color: black;
@@ -123,25 +123,22 @@ button a {
 
 @media (max-width: 1200px) {
     .home {
-        left: 10px;
-        top: 10px;
-        padding: 10px;
         font-size: 2vw;
     }
-    
+
     form {
         padding: 30px;
     }
-    
+
     input {
-        font-size: 1,5vw;
+        font-size: 1, 5vw;
     }
-    
+
     label {
         transform: translateY(-2.2vw);
         font-size: 2vw;
     }
-    
+
     input#t1:is(:focus, :valid)~label.name1,
     input#t2:is(:focus, :valid)~label.name2,
     input#t3:is(:focus, :valid)~label.name3,
@@ -153,35 +150,35 @@ button a {
     label.name6 {
         transform: translateY(-3.5vw);
     }
-    
+
     button {
         font-size: 2vw;
     }
 }
 
-@media (max-height: 500px) {
+@media (max-height: 400px) {
     h1 {
         margin-left: 50%;
         margin-bottom: 10px;
     }
-    
+
     form {
-        padding: 30px 0 30px 30px;
+        padding: 15px 0 15px 15px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
+
     input {
-        font-size: 1.6vw;
-        margin-top: 8px;
+        font-size: 1.3vw;
+        margin-top: 6px;
         width: 70%;
     }
-    
+
     label {
         transform: translateY(-2.3vw);
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
-    
+
     input#t1:is(:focus, :valid)~label.name1,
     input#t2:is(:focus, :valid)~label.name2,
     input#t3:is(:focus, :valid)~label.name3,
@@ -196,7 +193,7 @@ button a {
     }
 
     label.name6 {
-        transform: translateY(-4.2vw);
+        transform: translateY(-4vw);
     }
 
     button {
@@ -210,16 +207,16 @@ button a {
     .home {
         font-size: 2.5vw;
     }
-    
+
     input {
         font-size: 2.5vw;
     }
-    
+
     label {
         transform: translateY(-3vw);
         font-size: 3vw;
     }
-    
+
     input#t1:is(:focus, :valid)~label.name1,
     input#t2:is(:focus, :valid)~label.name2,
     input#t3:is(:focus, :valid)~label.name3,
@@ -231,7 +228,7 @@ button a {
     label.name6 {
         transform: translateY(-6vw);
     }
-    
+
     button {
         font-size: 3.5vw;
     }
@@ -241,17 +238,17 @@ button a {
     .home {
         font-size: 4vw;
     }
-    
+
     input {
         font-size: 2.7vw;
         margin-top: 10px;
     }
-    
+
     label {
-        transform: translateY(-4vw);
+        transform: translateY(-4.3vw);
         font-size: 4vw;
     }
-    
+
     input#t1:is(:focus, :valid)~label.name1,
     input#t2:is(:focus, :valid)~label.name2,
     input#t3:is(:focus, :valid)~label.name3,
@@ -259,11 +256,14 @@ button a {
     input#t5:is(:focus, :valid)~label.name5,
     input#t7:is(:focus, :valid)~label.name7,
     input#t8:is(:focus, :valid)~label.name8,
-    input#t9:is(:focus, :valid)~label.name9,
+    input#t9:is(:focus, :valid)~label.name9 {
+        transform: translateY(-7.7vw);
+    }
+
     label.name6 {
         transform: translateY(-7.5vw);
     }
-    
+
     button {
         font-size: 5vw;
     }

@@ -24,9 +24,9 @@ body {
 }
 
 .home {
-    left: 15px;
-    top: 15px;
-    padding: 15px;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
     background: orange;
     position: fixed;
     color: black;
@@ -34,15 +34,16 @@ body {
     font-size: 1.3vw;
 }
 
-.home:hover, .home2:hover {
+.home:hover,
+.home2:hover {
     text-decoration: underline;
     box-shadow: 0 0 20px 8px orange;
 }
 
 .home2 {
-    right: 15px;
-    top: 15px;
-    padding: 15px;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
     background: orange;
     position: fixed;
     color: black;
@@ -244,17 +245,7 @@ main {
 }
 
 @media (max-width: 1200px) {
-    .home {
-        left: 10px;
-        top: 10px;
-        padding: 10px;
-        font-size: 2vw;
-    }
-
-    .home2 {
-        right: 10px;
-        top: 10px;
-        padding: 10px;
+    .home, .home2 {
         font-size: 2vw;
     }
 
@@ -327,7 +318,9 @@ main {
 }
 
 @media (max-width: 768px) {
-    .home, .home2 {
+
+    .home,
+    .home2 {
         font-size: 2.5vw;
     }
 
@@ -412,7 +405,8 @@ main {
         justify-content: space-between;
     }
 
-    .home, .home2 {
+    .home,
+    .home2 {
         font-size: 3.5vw;
     }
 
@@ -427,6 +421,7 @@ main {
     .photo button {
         font-size: 2vw;
         margin-top: 10px;
+        padding: 6px;
     }
 
     .data {
@@ -455,6 +450,7 @@ main {
 
     .buttons button {
         font-size: 2vw;
+        padding: 6px;
     }
 
     #edit {

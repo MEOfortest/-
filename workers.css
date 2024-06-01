@@ -25,9 +25,9 @@ body {
 }
 
 .home {
-    left: 15px;
-    top: 15px;
-    padding: 15px;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
     background: orange;
     position: fixed;
     color: black;
@@ -126,42 +126,47 @@ span {
 
 @media (max-width: 1200px) {
     .home {
-        left: 10px;
-        top: 10px;
-        padding: 10px;
-        font-size: 2vw;
+        font-size: 1.8vw;
     }
-    
+
     .category {
         font-size: 2.5vw;
     }
-    
+
     .category::before {
         transform: translate(-2.2vw, -1.4vw);
     }
-    
+
     .category::after {
         transform: translate(1vw, -1.4vw);
     }
-    
+
     .worker {
         width: 60%;
     }
-    
+
     .worker div {
         font-size: 2vw;
     }
-    
+
     .worker button {
         font-size: 1.5vw;
     }
 }
 
+@media (max-height: 400px) {
+
+    .category::before,
+    .category::after {
+        content: ' ';
+    }
+}
+
 @media (max-width: 768px) {
     .home {
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
-    
+
     span {
         font-size: 2.5vw;
     }
@@ -169,23 +174,23 @@ span {
     .category {
         font-size: 3vw;
     }
-    
+
     .category::before {
         transform: translate(-2.2vw, -1.2vw);
     }
-    
+
     .category::after {
         transform: translate(1vw, -1.2vw);
     }
-    
+
     .worker {
         width: 70%;
     }
-    
+
     .worker div {
         font-size: 2.5vw;
     }
-    
+
     .worker button {
         font-size: 2vw;
     }
@@ -193,9 +198,6 @@ span {
 
 @media (max-width: 480px) {
     .home {
-        left: 10px;
-        top: 10px;
-        padding: 10px;
         font-size: 4vw;
     }
 
@@ -211,10 +213,7 @@ span {
         font-size: 5vw;
     }
 
-    .category::before {
-        content: ' ';
-    }
-
+    .category::before,
     .category::after {
         content: ' ';
     }

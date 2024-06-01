@@ -23,9 +23,9 @@ body {
 }
 
 .home {
-    left: 15px;
-    top: 15px;
-    padding: 15px;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
     background: orange;
     position: fixed;
     color: black;
@@ -113,32 +113,29 @@ span {
 
 @media (max-width: 1200px) {
     .home {
-        left: 10px;
-        top: 10px;
-        padding: 10px;
         font-size: 2vw;
     }
-    
+
     span {
         font-size: 2.5vw;
     }
-    
+
     .description {
         width: 90%;
     }
-    
+
     .description img {
         width: 60%;
     }
-    
+
     .description p {
-        font-size: 2.3vw;
+        font-size: 2.5vw;
     }
-    
+
     .description button {
         font-size: 2vw;
     }
-    
+
     .pagination a {
         padding: 10px 20px;
         margin: 0 5px;
@@ -150,27 +147,27 @@ span {
     .home {
         font-size: 2.5vw;
     }
-    
+
     span {
         font-size: 3.5vw;
     }
-    
+
     .description {
         width: 95%;
     }
-    
+
     .description img {
         width: 85%;
     }
-    
+
     .description p {
         font-size: 4vw;
     }
-    
+
     .description button {
         font-size: 3vw;
     }
-    
+
     .pagination a {
         font-size: 3.5vw;
     }

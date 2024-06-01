@@ -23,9 +23,9 @@ body {
 }
 
 .home {
-    left: 15px;
-    top: 15px;
-    padding: 15px;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
     background: orange;
     position: fixed;
     color: black;
@@ -97,6 +97,12 @@ img {
     padding: 10px;
 }
 
+.PD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .info p {
     font-size: 1.4vw;
     margin: 0 20px;
@@ -136,12 +142,9 @@ img {
 
 @media (max-width: 1200px) {
     .home {
-        left: 10px;
-        top: 10px;
-        padding: 10px;
         font-size: 1.5vw;
     }
-    
+
     main {
         display: flex;
         margin: 30px 0 30px 5%;
@@ -151,7 +154,7 @@ img {
     .name {
         font-size: 2vw;
     }
-    
+
     img {
         width: 35%;
         height: 22vw;
@@ -161,26 +164,26 @@ img {
         width: 60%;
         height: 22vw;
     }
-    
+
     .content h3 {
         font-size: 2vw;
     }
-    
+
     .info p {
         font-size: 1.4vw;
         margin: 0 5px;
 
     }
-    
+
     .content .info label {
         transform: translate(1vw, -1.1vw);
         font-size: 1.3vw;
     }
-    
+
     .buttons {
         font-size: 2vw;
     }
-    
+
     .buttons button {
         font-size: 2vw;
     }
@@ -194,7 +197,7 @@ img {
     .name {
         font-size: 2.5vw;
     }
-    
+
     img {
         width: 40%;
         height: 30vw;
@@ -204,11 +207,11 @@ img {
         width: 55%;
         height: 30vw;
     }
-    
+
     .content h3 {
-        font-size: 2,8vw;
+        font-size: 2, 8vw;
     }
-    
+
     .info.n1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -218,16 +221,16 @@ img {
     .info p {
         font-size: 1.8vw;
     }
-    
+
     .content .info label {
         transform: translate(1.2vw, -1.5vw);
         font-size: 1.8vw;
     }
-    
+
     .buttons {
         font-size: 2.5vw;
     }
-    
+
     .buttons button {
         font-size: 2.5vw;
     }
@@ -241,7 +244,7 @@ img {
     .name {
         font-size: 4vw;
     }
-    
+
     main {
         margin: 10px 0;
         display: flex;
@@ -254,7 +257,7 @@ img {
         width: 80%;
         height: 50vw;
     }
-    
+
     .content {
         width: 80%;
         height: 55vw;
@@ -264,8 +267,9 @@ img {
         margin: 10px 0;
         font-size: 5vw;
     }
-    
-    .info.n1, .info.n2 {
+
+    .info.n1,
+    .info.n2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5vw;
@@ -274,16 +278,16 @@ img {
     .info p {
         font-size: 2.7vw;
     }
-    
+
     .content .info label {
         transform: translate(3vw, -3vw);
         font-size: 3vw;
     }
-    
+
     .buttons {
         font-size: 3vw;
     }
-    
+
     .buttons button {
         font-size: 3vw;
     }
@@ -296,11 +300,11 @@ img {
         padding: 10px;
         font-size: 3vw;
     }
-    
+
     .name {
         font-size: 4vw;
     }
-    
+
     main {
         margin: 10px 0;
         display: flex;
@@ -313,7 +317,7 @@ img {
         width: 95%;
         height: 50vw;
     }
-    
+
     .content {
         width: 95%;
         height: 75vw;
@@ -323,8 +327,9 @@ img {
         margin: 5px 0 20px 0;
         font-size: 5vw;
     }
-    
-    .info.n1, .info.n2 {
+
+    .info.n1,
+    .info.n2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5vw;
@@ -333,16 +338,16 @@ img {
     .info p {
         font-size: 4vw;
     }
-    
+
     .content .info label {
         transform: translate(5vw, -3.5vw);
         font-size: 4vw;
     }
-    
+
     .buttons {
         font-size: 4vw;
     }
-    
+
     .buttons button {
         font-size: 4vw;
     }

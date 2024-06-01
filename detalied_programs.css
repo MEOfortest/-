@@ -22,9 +22,9 @@ body {
 }
 
 .home {
-    left: 15px;
-    top: 15px;
-    padding: 15px;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
     background: orange;
     position: fixed;
     color: black;
@@ -93,29 +93,26 @@ body {
 
 @media (max-width: 1200px) {
     .home {
-        left: 10px;
-        top: 10px;
-        padding: 10px;
         font-size: 2vw;
     }
-    
+
     .line {
         font-size: 1.8vw;
     }
-    
+
     .picture {
         width: 70%;
     }
-    
+
     .grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-    
+
     .feedback img {
         width: 30%;
     }
-    
+
     .feedback div {
         padding: 0 10px;
         font-size: 2.2vw;
@@ -130,16 +127,16 @@ body {
     .home {
         font-size: 2.5vw;
     }
-    
+
     .grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
-    
+
     .feedback img {
         width: 30%;
     }
-    
+
     .feedback div {
         padding: 0 5px;
         font-size: 2.3vw;
